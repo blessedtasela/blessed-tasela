@@ -1,8 +1,21 @@
 <section class="bg-dark-blue h-screen w-screen">
-  <div class="top-4 left-4 p-4">
-   <img class="w-50" style="width: 100px;"
-   src="../assets/blessed-tasela.png">
-  </div>
+  <nav class="flex justify-between items-center w-full justify-end p-4 text-sm">
+    <div class="">
+      <ul class="flex items-center left-0 grid grid-cols-2 md:grid-cols-6
+      gap-8 text-light-gray font-sans font-bold ">
+      <li class="mr-16"> <div class="text-xl font-sans cursor-pointer">
+        <img class="w-50" style="width: 100px;" src="../assets/blessed-tasela.png">
+      </div></li>
+    
+        <li><span class="text-lemon-green">01. </span>About</li>
+        <li><span class="text-lemon-green">02. </span>Experience</li>
+        <li><span class="text-lemon-green">03. </span>Contact</li>
+        <li><span class="text-lemon-green">04. </span>Education</li>
+        <li class="flex items-center text-lemon-green border-2 border-lemon-green p-1 rounded-md">
+          Resume</li>
+      </ul>
+    </div>
+  </nav>
   <div class="flex justify-center">
     <button class="p-2 py-2 bg-gray-400 font-bold text-dark-blue font-sans rounded-md cursor-pointer"
       (click)="openBerliz('https://berliz.netlify.app/')">Go to Berliz
