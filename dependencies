@@ -1,0 +1,14 @@
+## Tailwind css
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init
+
+add the content to the tailwind.conf.js file
+  content: [
+    "./src/**/*.{html,ts}",
+  ],
+
+add the configuration to style.css
+  @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
