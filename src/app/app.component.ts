@@ -15,7 +15,7 @@ export class AppComponent {
     const dialogConfig = new MatDialogConfig();
     dialogConfig.disableClose = true;
     dialogConfig.autoFocus = true;
-    dialogConfig.width = '900px';
+    dialogConfig.width = '1000px';
     dialogConfig.height = '600px'
   
     const dialogRef = this.dialog.open(ResumeModalComponent, dialogConfig);
