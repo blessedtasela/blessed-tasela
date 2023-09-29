@@ -12,3 +12,15 @@ add the configuration to style.css
 @tailwind components;
 @tailwind utilities;
 
+## Pdf viewer
+npm i ngx-extended-pdf-viewer
+
+# Angular material
+npm install @angular/material
+-- add this line to style.css
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+## Feather icons
+npm i angular-feather
+
+

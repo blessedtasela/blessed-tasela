@@ -1,1 +1,8 @@
-<p>resume-modal works!</p>
+<div class="relative p-2">
+    <div class="text-lemon-green absolute top-0 right-0 p-1">
+        <i-feather name="x-circle" (click)="closeDialog()" class="cursor-pointer"></i-feather>
+    </div>
+    <p class="text-gray-950 font-sans font-bold text-md flex">CV</p>
+    <ngx-extended-pdf-viewer src="../../assets/files/CV-Blessed-software_engineer.pdf">
+    </ngx-extended-pdf-viewer>
+</div>

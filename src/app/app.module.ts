@@ -8,6 +8,10 @@ import { ContactModalComponent } from './contact-modal/contact-modal.component';
 import { ExperienceModalComponent } from './experience-modal/experience-modal.component';
 import { EducationModalComponent } from './education-modal/education-modal.component';
 import { ResumeModalComponent } from './resume-modal/resume-modal.component';
+import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
+import { MatDialogModule } from '@angular/material/dialog';
+import { FeatherModule } from 'angular-feather';
+import { IconsModule } from './icons/icons.module';
 
 @NgModule({
   declarations: [
@@ -16,11 +20,15 @@ import { ResumeModalComponent } from './resume-modal/resume-modal.component';
     ContactModalComponent,
     ExperienceModalComponent,
     EducationModalComponent,
-    ResumeModalComponent
+    ResumeModalComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxExtendedPdfViewerModule,
+    MatDialogModule,
+    FeatherModule,
+    IconsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

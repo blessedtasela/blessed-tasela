@@ -3,16 +3,17 @@
     <div class="">
       <ul class="flex items-center left-0 grid grid-cols-2 md:grid-cols-6
       gap-8 text-light-gray font-sans font-bold ">
-      <li class="mr-16"> <div class="text-xl font-sans cursor-pointer">
+      <li class="cursor-pointer"> <div class="mr-16 text-xl font-sans cursor-pointer">
         <img class="w-50" style="width: 100px;" src="../assets/blessed-tasela.png">
       </div></li>
     
-        <li><span class="text-lemon-green">01. </span>About</li>
-        <li><span class="text-lemon-green">02. </span>Experience</li>
-        <li><span class="text-lemon-green">03. </span>Contact</li>
-        <li><span class="text-lemon-green">04. </span>Education</li>
-        <li class="flex items-center text-lemon-green border-2 border-lemon-green p-1 rounded-md">
-          Resume</li>
+        <li class="cursor-pointer"><span class="text-lemon-green">01. </span>About</li>
+        <li class="cursor-pointer"><span class="text-lemon-green">02. </span>Experience</li>
+        <li class="cursor-pointer"><span class="text-lemon-green">03. </span>Contact</li>
+        <li class="cursor-pointer"><span class="text-lemon-green">04. </span>Education</li>
+        <li class="flex items-center cursor-pointer">
+          <span class="text-lemon-green border-2 border-lemon-green p-1 rounded-md" (click)="openResume()">
+            Resume</span></li>
       </ul>
     </div>
   </nav>
