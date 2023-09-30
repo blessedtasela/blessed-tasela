@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-contact-modal',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class ContactModalComponent {
 
+  constructor(private dialogRef: MatDialogRef<ContactModalComponent>) { }
+
+  closeDialog() {
+    this.dialogRef.close("Dialog closed successfully");
+  }
 }

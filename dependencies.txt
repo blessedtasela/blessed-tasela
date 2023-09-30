@@ -13,7 +13,12 @@ add the configuration to style.css
 @tailwind utilities;
 
 ## Pdf viewer
-npm i ngx-extended-pdf-viewer
+ng add ngx-extended-pdf-viewer
+-- added this line to angular.json file under serve/build
+"options": {
+            "port": 5200, 
+            "host": "localhost"
+          },
 
 # Angular material
 npm install @angular/material

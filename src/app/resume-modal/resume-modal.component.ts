@@ -7,7 +7,7 @@ import { MatDialogRef } from '@angular/material/dialog';
   styleUrls: ['./resume-modal.component.css']
 })
 export class ResumeModalComponent {
-  resume = '../../assets/CV-Blessed-software_engineer.pdf'
+
 
   constructor(private dialogRef: MatDialogRef<ResumeModalComponent>) { }
 

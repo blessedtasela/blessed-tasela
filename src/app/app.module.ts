@@ -12,6 +12,7 @@ import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 import { MatDialogModule } from '@angular/material/dialog';
 import { FeatherModule } from 'angular-feather';
 import { IconsModule } from './icons/icons.module';
+import { ExamplePdfViewerComponent } from './example-pdf-viewer/example-pdf-viewer.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { IconsModule } from './icons/icons.module';
     ExperienceModalComponent,
     EducationModalComponent,
     ResumeModalComponent,
+    ExamplePdfViewerComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +33,7 @@ import { IconsModule } from './icons/icons.module';
     IconsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [ExamplePdfViewerComponent]
 })
 export class AppModule { }
