@@ -13,15 +13,21 @@ import { EducationModalComponent } from './education-modal/education-modal.compo
 })
 export class AppComponent {
   title = 'blessed-tasela';
+  menuOpen: boolean = false;
 
   constructor(private dialog: MatDialog) { }
+
+  openMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
+
   openResume() {
     const dialogConfig = new MatDialogConfig();
     dialogConfig.disableClose = true;
     dialogConfig.autoFocus = true;
     dialogConfig.width = '600px';
     dialogConfig.height = '600px'
-  
+
     const dialogRef = this.dialog.open(ResumeModalComponent, dialogConfig);
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
@@ -38,7 +44,7 @@ export class AppComponent {
     dialogConfig.autoFocus = true;
     dialogConfig.width = '800px';
     dialogConfig.height = '300px'
-  
+
     const dialogRef = this.dialog.open(ContactModalComponent, dialogConfig);
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
@@ -55,7 +61,7 @@ export class AppComponent {
     dialogConfig.autoFocus = true;
     dialogConfig.width = '800px';
     dialogConfig.height = '600px'
-  
+
     const dialogRef = this.dialog.open(AboutModalComponent, dialogConfig);
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
@@ -72,7 +78,7 @@ export class AppComponent {
     dialogConfig.autoFocus = true;
     dialogConfig.width = '800px';
     dialogConfig.height = '600px'
-  
+
     const dialogRef = this.dialog.open(ExperienceModalComponent, dialogConfig);
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
@@ -89,7 +95,7 @@ export class AppComponent {
     dialogConfig.autoFocus = true;
     dialogConfig.width = '800px';
     dialogConfig.height = '500px'
-  
+
     const dialogRef = this.dialog.open(EducationModalComponent, dialogConfig);
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
