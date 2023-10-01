@@ -13,6 +13,12 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { FeatherModule } from 'angular-feather';
 import { IconsModule } from './icons/icons.module';
 import { ExamplePdfViewerComponent } from './example-pdf-viewer/example-pdf-viewer.component';
+import { IntroductionComponent } from './introduction/introduction.component';
+import { FooterComponent } from './footer/footer.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { ServicesModalComponent } from './services-modal/services-modal.component';
+import { YoutubeSearchComponent } from './youtube-search/youtube-search.component';
+import { ArticleBlogComponent } from './article-blog/article-blog.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +29,12 @@ import { ExamplePdfViewerComponent } from './example-pdf-viewer/example-pdf-view
     EducationModalComponent,
     ResumeModalComponent,
     ExamplePdfViewerComponent,
+    IntroductionComponent,
+    FooterComponent,
+    NavigationComponent,
+    ServicesModalComponent,
+    YoutubeSearchComponent,
+    ArticleBlogComponent,
   ],
   imports: [
     BrowserModule,
