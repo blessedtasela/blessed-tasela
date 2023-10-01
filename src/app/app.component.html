@@ -1,5 +1,5 @@
 <section class="bg-dark-blue h-screen">
-  <nav class="flex w-full justify-center justify-between md:justify-center text-sm bg-dark-blue">
+  <nav class="shadow-lg flex fixed w-full justify-center justify-between md:justify-center text-sm bg-dark-blue">
     <div class="font-sans cursor-pointer p-2">
       <img style="width: 80px;" src="../assets/blessed-tasela.png">
     </div>
@@ -21,7 +21,6 @@
         </li>
       </ul>
     </div>
-
     <div *ngIf="!menuOpen" class="md:hidden p-2">
       <i-feather name="align-justify" (click)="openMenu()" class="text-lemon-green  p-2 cursor-pointer md:hidden"
         style="width: 40px;"></i-feather>
@@ -43,8 +42,8 @@
       </ul>
     </div>
   </nav>
-  <hr class="border-lemon-green md:hidden">
-  <div class="p-8 md:p-20 mt-24 rounded-lg shadow-lg">
+  <hr class="border-lemon-green">
+  <div class="p-8 md:p-20 mt-32 rounded-lg shadow-lg">
     <p class="text-sm font-sans text-justify mb-4 text-lemon-green mr-8 md:mr-64">
       Hi, my name is
     </p>

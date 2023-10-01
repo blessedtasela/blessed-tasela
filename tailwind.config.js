@@ -16,6 +16,7 @@ module.exports = {
       },
       borderColor: {
         'lemon-green': '#48B0A0',
+        'light-gray': '#C7D5D1',
       },
       
     },
