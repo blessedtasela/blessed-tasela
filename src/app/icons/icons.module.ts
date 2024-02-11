@@ -53,7 +53,7 @@ import {
   UserPlus,
   PlusSquare,
   Filter,
-  FileText
+  FileText,
 } from 'angular-feather/icons';
 
 // Select some icons (use an object, not an array)

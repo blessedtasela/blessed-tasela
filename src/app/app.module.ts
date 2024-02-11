@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AboutModalComponent } from './about-modal/about-modal.component';
 import { ContactModalComponent } from './contact-modal/contact-modal.component';
 import { ExperienceModalComponent } from './experience-modal/experience-modal.component';
 import { EducationModalComponent } from './education-modal/education-modal.component';
@@ -13,28 +12,37 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { FeatherModule } from 'angular-feather';
 import { IconsModule } from './icons/icons.module';
 import { ExamplePdfViewerComponent } from './example-pdf-viewer/example-pdf-viewer.component';
-import { IntroductionComponent } from './introduction/introduction.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavigationComponent } from './navigation/navigation.component';
-import { ServicesModalComponent } from './services-modal/services-modal.component';
-import { YoutubeSearchComponent } from './youtube-search/youtube-search.component';
-import { ArticleBlogComponent } from './article-blog/article-blog.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { AboutComponent } from './about/about.component';
+import { MariamComponent } from './mariam/mariam.component';
+import { BerlizComponent } from './berliz/berliz.component';
+import { YoutubeComponent } from './youtube/youtube.component';
+import { VotingComponent } from './voting/voting.component';
+import { ContactComponent } from './contact/contact.component';
+import { EducationComponent } from './education/education.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutModalComponent,
     ContactModalComponent,
     ExperienceModalComponent,
     EducationModalComponent,
     ResumeModalComponent,
     ExamplePdfViewerComponent,
-    IntroductionComponent,
     FooterComponent,
     NavigationComponent,
-    ServicesModalComponent,
-    YoutubeSearchComponent,
-    ArticleBlogComponent,
+    NavbarComponent,
+    AboutComponent,
+    MariamComponent,
+    BerlizComponent,
+    YoutubeComponent,
+    VotingComponent,
+    ContactComponent,
+    EducationComponent,
+    ServicesComponent,
   ],
   imports: [
     BrowserModule,
