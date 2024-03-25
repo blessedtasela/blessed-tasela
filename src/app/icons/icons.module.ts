@@ -54,6 +54,8 @@ import {
   PlusSquare,
   Filter,
   FileText,
+  Linkedin,
+  ArrowRight
 } from 'angular-feather/icons';
 
 // Select some icons (use an object, not an array)
@@ -109,7 +111,9 @@ const icons = {
   UserPlus,
   PlusSquare,
   Filter,
-  FileText
+  FileText,
+  Linkedin,
+  ArrowRight
 };
 
 @NgModule({

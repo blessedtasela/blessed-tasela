@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { ContactModalComponent } from '../contact-modal/contact-modal.component';
 import { EducationModalComponent } from '../education-modal/education-modal.component';
@@ -13,9 +13,10 @@ import { ResumeModalComponent } from '../resume-modal/resume-modal.component';
 export class NavbarComponent {
   menuOpen: boolean = false;
 
-  constructor(private dialog: MatDialog) { }
+  constructor(private dialog: MatDialog,
+    private elementRef: ElementRef) { }
 
-  openMenu() {
+  toggleMenu() {
     this.menuOpen = !this.menuOpen;
   }
 
@@ -36,60 +37,19 @@ export class NavbarComponent {
     });
   }
 
-  openContact() {
-    const dialogConfig = new MatDialogConfig();
-    dialogConfig.disableClose = true;
-    dialogConfig.autoFocus = true;
-    dialogConfig.width = '800px';
-    dialogConfig.height = '300px'
-
-    const dialogRef = this.dialog.open(ContactModalComponent, dialogConfig);
-    dialogRef.afterClosed().subscribe(result => {
-      if (result) {
-        console.log(`Dialog result: ${result}`);
-      } else {
-        console.log('Dialog closed without getting contact');
-      }
-    });
+  scrollToComponent(componentId: string): void {
+    const element = this.elementRef.nativeElement.querySelector('#' + componentId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 
 
-  openExperience() {
-    const dialogConfig = new MatDialogConfig();
-    dialogConfig.disableClose = true;
-    dialogConfig.autoFocus = true;
-    dialogConfig.width = '800px';
-    dialogConfig.height = '600px'
-
-    const dialogRef = this.dialog.open(ExperienceModalComponent, dialogConfig);
-    dialogRef.afterClosed().subscribe(result => {
-      if (result) {
-        console.log(`Dialog result: ${result}`);
-      } else {
-        console.log('Dialog closed without checking experience');
-      }
-    });
+  sendEmail(): void {
+    const emailAddress = 'taselablessed@gmail.com';
+    const subject = 'Book an appointment with Blessed';
+    const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}`;
+    window.location.href = mailtoLink;
   }
 
-  openEducation() {
-    const dialogConfig = new MatDialogConfig();
-    dialogConfig.disableClose = true;
-    dialogConfig.autoFocus = true;
-    dialogConfig.width = '800px';
-    dialogConfig.height = '500px'
-
-    const dialogRef = this.dialog.open(EducationModalComponent, dialogConfig);
-    dialogRef.afterClosed().subscribe(result => {
-      if (result) {
-        console.log(`Dialog result: ${result}`);
-      } else {
-        console.log('Dialog closed without viewing education');
-      }
-    });
-  }
-
-  openBerliz(url: any) {
-    window.open(url, '_blank');
-
-  }
 }

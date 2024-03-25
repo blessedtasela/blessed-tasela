@@ -13,7 +13,6 @@ import { FeatherModule } from 'angular-feather';
 import { IconsModule } from './icons/icons.module';
 import { ExamplePdfViewerComponent } from './example-pdf-viewer/example-pdf-viewer.component';
 import { FooterComponent } from './footer/footer.component';
-import { NavigationComponent } from './navigation/navigation.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
 import { MariamComponent } from './mariam/mariam.component';
@@ -34,7 +33,6 @@ import { TestimonialComponent } from './testimonial/testimonial.component';
     ResumeModalComponent,
     ExamplePdfViewerComponent,
     FooterComponent,
-    NavigationComponent,
     NavbarComponent,
     AboutComponent,
     MariamComponent,
