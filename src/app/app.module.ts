@@ -23,6 +23,7 @@ import { VotingComponent } from './voting/voting.component';
 import { ContactComponent } from './contact/contact.component';
 import { EducationComponent } from './education/education.component';
 import { ServicesComponent } from './services/services.component';
+import { TestimonialComponent } from './testimonial/testimonial.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { ServicesComponent } from './services/services.component';
     ContactComponent,
     EducationComponent,
     ServicesComponent,
+    TestimonialComponent,
   ],
   imports: [
     BrowserModule,

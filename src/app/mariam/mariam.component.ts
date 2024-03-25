@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./mariam.component.css']
 })
 export class MariamComponent {
-
+  constructor() { }
+  
+  openVoting(url: any) {
+    window.open(url, '_blank');
+  }
 }
