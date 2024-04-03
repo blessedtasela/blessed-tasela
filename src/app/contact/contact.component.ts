@@ -28,7 +28,7 @@ export class ContactComponent {
     {
       'id': 4,
       'url': 'https://github.com/blessedtasela',
-      'message': 'Twitter',
+      'message': 'github',
       'icon': 'github'
     },
     {

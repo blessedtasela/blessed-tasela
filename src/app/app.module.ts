@@ -23,6 +23,7 @@ import { ContactComponent } from './contact/contact.component';
 import { EducationComponent } from './education/education.component';
 import { ServicesComponent } from './services/services.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
+import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { TestimonialComponent } from './testimonial/testimonial.component';
     EducationComponent,
     ServicesComponent,
     TestimonialComponent,
+    ScrollToTopComponent,
   ],
   imports: [
     BrowserModule,
