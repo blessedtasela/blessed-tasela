@@ -10,15 +10,20 @@ export class TestimonialComponent {
     {
       'id': 1,
       'name': 'Joy Alofokhai',
-      'imgLink': '../../assets/files/joy.jpeg',
-      'testimonial': 'As a client, working with Mariam has been an absolute pleasure. Her professionalism, ' +
-        'expertise, and dedication to her craft are truly remarkable. Mariam consistently provides the best and ' +
-        'most efficient service, going above and beyond to ensure that my needs are not just met, but exceeded. ' +
-        'Her attention to detail and ability to understand and anticipate my requirements have made every ' +
-        'interaction with her a positive and productive experience. Mariam\'s commitment to delivering exceptional ' +
-        'results is evident in her work ethic and the quality of her output. I can confidently say that Mariam is ' +
-        'not only good at what she does - she\'s exceptional. I highly recommend Mariam for her outstanding skills, ' +
-        'reliability, and unwavering commitment to excellence.',
+      'imgLink': '../../assets/mariam.jpeg',
+      'testimonial': 'I am delighted to share my heartfelt testimonial for Blessed Tasela, the talented ' +
+        'designer behind my exceptional landing page.Blessed\'s dedication to perfection and keen attention ' +
+        'to detail have truly exceeded my expectations.From the outset, Blessed demonstrated a deep ' +
+        'understanding of my vision and preferences, ensuring that every element of the landing page was ' +
+        'meticulously crafted to reflect my brand identity.Their proactive approach in seeking feedback ' +
+        'and making necessary adjustments along the way resulted in a final product that surpassed all my ' +
+        'expectations.Not only does the landing page capture attention with its stunning design, but it ' +
+        'also effectively communicates my message to visitors.The feedback from those who have seen the ' +
+        'page has been overwhelmingly positive, with many expressing awe at the level of creativity and ' +
+        'professionalism displayed.Working with Blessed has been an absolute pleasure, and I am immensely ' +
+        'grateful for their talent, dedication, and collaborative spirit.I look forward to future ' +
+        'collaborations and cannot recommend Blessed Tasela highly enough for anyone seeking top-notch ' +
+        'design expertise.Thank you, Blessed, for bringing my vision to life in such a remarkable way!',
       'rating': 5
     },
     {

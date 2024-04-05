@@ -24,6 +24,13 @@ import { EducationComponent } from './education/education.component';
 import { ServicesComponent } from './services/services.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
+import { BerlizDetailsComponent } from './berliz-details/berliz-details.component';
+import { MariamDetailsComponent } from './mariam-details/mariam-details.component';
+import { YoutubeDetailsComponent } from './youtube-details/youtube-details.component';
+import { VotingDetailsComponent } from './voting-details/voting-details.component';
+import { TestimonialDetailsComponent } from './testimonial-details/testimonial-details.component';
+import { LandingComponent } from './landing/landing.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +52,13 @@ import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
     ServicesComponent,
     TestimonialComponent,
     ScrollToTopComponent,
+    BerlizDetailsComponent,
+    MariamDetailsComponent,
+    YoutubeDetailsComponent,
+    VotingDetailsComponent,
+    TestimonialDetailsComponent,
+    LandingComponent,
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,
