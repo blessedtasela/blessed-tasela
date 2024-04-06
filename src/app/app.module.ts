@@ -31,6 +31,7 @@ import { VotingDetailsComponent } from './voting-details/voting-details.componen
 import { TestimonialDetailsComponent } from './testimonial-details/testimonial-details.component';
 import { LandingComponent } from './landing/landing.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { ProjectsComponent } from './projects/projects.component';
     TestimonialDetailsComponent,
     LandingComponent,
     ProjectsComponent,
+    PortfolioComponent,
   ],
   imports: [
     BrowserModule,

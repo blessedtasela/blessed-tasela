@@ -1,4 +1,5 @@
-<div class="h-screen shadow-lg text-xl font-mono text-light-gray bg-gradient-to-b from-lemon-green via-dark-blue to-dark-blue">
+<div
+    class="h-screen shadow-lg text-xl font-mono text-light-gray bg-gradient-to-b from-lemon-green via-dark-blue to-dark-blue">
     <div class="p-8 py-24">
         <div class="text-xl md:text-4xl font-sans text-center mb-2 text-dark-blue font-bold">
             <div class="flex items-center justify-center mt-4 font-mono">
@@ -18,11 +19,12 @@
                             testament to our commitment to delivering exceptional results and exceeding our clients'
                             expectations.
                         </p>
-                        <div class="flex justify-center p-2 text-sm md:text-lg">
+                        <div class="flex justify-center text-sm md:text-lg p-8">
                             <button
-                                class="p-4 border-2 bg-lemon-green border-lemon-green text-dark-blue font-sans rounded-md cursor-pointer"
-                                [routerLink]="">
-                                See all Clients Reviews
+                                class="p-4 border-2 bg-lemon-green border-lemon-green text-dark-blue font-sans rounded-md cursor-pointer">
+                                <a [routerLink]="['/testimonials']">
+                                    See all Clients Reviews
+                                </a>
                             </button>
                         </div>
                     </div>
