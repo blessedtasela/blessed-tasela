@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class BerlizDetailsComponent {
 
+  constructor() { }
+  
+  openVoting(url: any) {
+    window.open(url, '_blank');
+  }
 }

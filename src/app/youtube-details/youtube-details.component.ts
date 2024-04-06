@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./youtube-details.component.css']
 })
 export class YoutubeDetailsComponent {
-
+  constructor() { }
+  
+  openVoting(url: any) {
+    window.open(url, '_blank');
+  }
 }

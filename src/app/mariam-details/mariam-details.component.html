@@ -1,1 +1,59 @@
-<p>mariam-details works!</p>
+<div class="shadow-lg text-xl font-sans text-light-gray bg-gradient-to-b from-lemon-green via-dark-blue to-dark-blue">
+    <div class="p-8 py-48">
+        <p class="text-xl md:text-4xl font-sans text-center mb-4  text-dark-blue font-bold">
+            Delivering Excellence: The Mirals Landing Page
+        </p>
+        <div class="flex items-center justify-center mt-4">
+            <div class="grid grid-cols items-center">
+                <div class="flex items-center justify-center md:justify-start mt-8">
+                    <img src="../../assets/mirals-md.png" class="object-fit rounded-md w-full hidden md:block">
+                    <img src="../../assets/mirals-sm.jpeg" class="object-fit rounded-md w-full block md:hidden">
+                </div>
+                <div class="text-sm md:text-md font-sans p-2 text-justify md:p-8">
+                    <div class="grid grid-cols md:grid-cols-2 font-mono">
+                        <div class="p-0 md:p-4">
+                            <p class="p-2 mt-4">When I developed the landing page for Mirals, it was a
+                                culmination of my expertise displayed in my LinkedIn portfolio. Mirals, impressed by my
+                                work, reached out to me for their landing page needs, and I rose to the occasion.</p>
+
+                            <p class="p-2 mt-4">I meticulously crafted the page to showcase Mirals'
+                                professional skills and accomplishments. Utilizing HTML, CSS, and JavaScript, I ensured
+                                an engaging and intuitive interface that perfectly encapsulates Mirals' brand identity.
+                            </p>
+
+                            <p class="p-2 mt-4">This project was set against a tight deadline, but my
+                                commitment to delivering results remained unwavering. Despite the time constraints, I
+                                managed to complete the landing page to Mirals' satisfaction, showcasing my ability to
+                                thrive under pressure.</p>
+
+                            <p class="p-2 mt-4">The successful completion of this project not only served as
+                                a testament to my technical proficiency but also deepened my understanding of client
+                                requirements and expectations. It underscores my dedication to delivering customized
+                                solutions that exceed client needs, even within challenging timeframes.</p>
+                            <div class="flex justify-center items-center p-2 md:p-8 mt-16 hidden md:block">
+                                <button class="p-2 py-2 border-2 border-lemon-green text-white font-bold font-sans rounded-md 
+                                     mr-8 md:mr-64 cursor-pointer whitespace-nowrap"
+                                    (click)="openVoting('https://mirals.netlify.app/')">
+                                    <span class="p-2">Check out the page here</span> 
+                                    <i-feather name="globe" class="-mt-1 text-lemon-green" style="width: 30px;">
+                                    </i-feather>
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="../../assets/mirals-sm.jpeg" class="object-cover rounded-md hidden md:block">
+                        </div>
+                    </div>
+                    <div class="flex justify-center p-2 md:p-8 mt-4 block md:hidden">
+                        <button class="p-2 py-2 border-2 border-lemon-green text-white font-bold font-sans rounded-md 
+                             mr-8 md:mr-64 cursor-pointer" (click)="openVoting('https://mirals.netlify.app/')">
+                             <span class="p-2">Check out the page here</span> 
+                            <i-feather name="globe" class="-mt-2 text-lemon-green" style="width: 30px;">
+                            </i-feather>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
