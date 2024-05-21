@@ -1,38 +1,24 @@
-<div class="p-4 md:p-12 mt-12 shadow-lg text-xl font-sans text-light-gray 
+<div class="p-4 md:p-12 shadow-lg text-xl font-mono text-light-gray 
             bg-gradient-to-b from-lemon-green via-dark-blue to-dark-blue">
-    <div class="flex-cols items-center justify-center p-4">
-        <p class="text-sm md:text-md font-sans text-justify mb-2 text-dark-blue font-bold mr-8 md:mr-64">
-            Hi, my name is
-        </p>
-        <p class="text-2xl md:text-4xl font-sans text-justify mb-2 text-light-gray mr-8 md:mr-64 font-bold">
-            Blessed Tasela
-        </p>
-        <p class="text-sm md:text-lg font-mono italic text-justify mb-2 mr-8 md:mr-64">
-            I am an experienced software engineer and personal trainer.
-        </p>
-        <div class="flex items-center justify-center mt-4 font-mono">
-            <div class="grid grid-cols items-center">
-                <div class="flex items-center justify-center">
-                    <img src="../../assets/blessed-3.jpeg" class="object-fit rounded-md w-48">
-                </div>
-                <div class="text-sm p-2 text-justify ">
-                    <p class="p-2 mt-4">
-                        With expertise in several languages of code, I am passionate about using technology to help
-                        businesses and individuals problem solve and reach their goals. Through various industry,
-                        private
-                        client, and personal projects, I have the experience necessary to deliver superior quality
-                        products. My current venture and personal project, Berliz, is a testament to my
-                        ability to create technological products that meet user needs and provide optimal solutions.
-                        Berliz is a platform that redefines
-                        fitness through
-                        technology-driven connections, by offering tailored and multimodal
-                        fitness programs for users of all experience levels.
-                        Berliz was inspired by my work as a personal trainer and my passion for sport and fitness. </p>
-                    <div class="flex justify-center p-2">
-                        <button class="p-2 py-2 border-2 border-lemon-green text-lemon-green font-sans rounded-md 
-                        cursor-pointer" (click)="openBerliz('https://berliz.netlify.app/')">Check out Berliz
-                        </button>
-                    </div>
+    <div class="h-screen flex flex-col items-center justify-center text-center text-gray-900 font-mono">
+        <div class="text-2xl md:text-6xl text-center mb-2 font-bold text-white">
+            Hello, I am Blessed Tasela
+        </div>
+        <div class="max-w-6xl mt-4">
+            <div class="text-sm md:text-lg p-2 text-white">
+                I am an experienced software engineer and personal trainer, dedicated to crafting tailored solutions for
+                success. With a focus on results, I bring my expertise in software development to deliver optimized apps
+                that meet your needs. Outside of software, I specialize in creating personalized fitness programs to
+                help
+                you achieve your health goals. Trust me to drive your projects forward with professional and
+                personalized
+                services.
+                <div class="mt-4">
+                    <button class="bg-lemon-green text-dark-blue p-2 px-8 md:px-12 rounded-md text-xl md:text-2xl font-bold">
+                        <a href="/#projects" (click)="scrollToComponent('projects')">
+                            Projects
+                        </a>
+                    </button>
                 </div>
             </div>
         </div>

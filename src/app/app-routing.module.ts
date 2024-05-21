@@ -8,10 +8,12 @@ import { VotingDetailsComponent } from './voting-details/voting-details.componen
 import { TestimonialDetailsComponent } from './testimonial-details/testimonial-details.component';
 import { YoutubeDetailsComponent } from './youtube-details/youtube-details.component';
 import { MariamDetailsComponent } from './mariam-details/mariam-details.component';
+import { LandingComponent } from './landing/landing.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'portfolio', pathMatch: 'full' },
   { path: 'portfolio', component: PortfolioComponent },
+  { path: 'home', component: LandingComponent },
   { path: 'berliz', component: BerlizDetailsComponent },
   { path: 'mirals', component: MariamDetailsComponent },
   { path: 'youtube-clone', component: YoutubeDetailsComponent },

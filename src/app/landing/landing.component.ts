@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-landing',
@@ -6,9 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./landing.component.css']
 })
 export class LandingComponent {
-  constructor() { }
+  constructor(private elementRef: ElementRef) { }
 
   openBerliz(url: any) {
     window.open(url, '_blank');
+  }
+
+  scrollToComponent(componentId: string): void {
+    const element = this.elementRef.nativeElement.querySelector('#' + componentId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 }

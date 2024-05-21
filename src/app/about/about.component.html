@@ -1,37 +1,58 @@
 <div class="shadow-lg text-xl font-mono text-light-gray bg-gradient-to-b from-lemon-green via-dark-blue to-dark-blue">
-    <div class="p-8 py-24">
-        <p class="text-xl md:text-4xl font-sans text-center mb-4 text-dark-blue font-bold">
+    <div class="py-32 flex-col items-center justify-center p-4">
+        <p class="text-2xl md:text-4xl font-mono text-center mb-4 text-white font-bold">
             About Me
         </p>
-        <p class="mt-4 w-12 mx-auto border-2 p-1 bg-light-gray rounded-lg border-light-gray"></p>
+        <p class="mt-4 w-12 mx-auto border-2 p-1 bg--blue rounded-lg border-dark-blue"></p>
+        <p class="p-4 px-0 md:px-32 mt-4 text-center text-sm md:text-xl">
+            Here you will find more information about me, what i do, and my top skills mostly in terms of programming
+            and technology
+        </p>
     </div>
-    <div class="flex items-center justify-center mt-4 font-mono">
-        <div class="grid grid-cols md:grid-cols-2 items-center">
-            <div class="text-sm md:text-md p-2 text-justify">
-                <p class="p-2 mt-4">
-                    I receved my bachelors degree in software engineering from the prestigious Sup MTI in Rabat,
-                    Morocco. There, I gained foundational experience with Java, JavaScript, SQL, C, HTML, CSS, PHP,
-                    Python, R, and many more. While in school, I regularly competed in hackathons and coding
-                    competitions; many of which I placed or won outright. I re-enforced my experience through my
-                    internship with software solutions
-                    firm Mapersive Cassablanca, Morocco. During my internship I also learned modern coding frameworks
-                    such as Angular, SpringBoot, Tailwind, Bootstrap. There, I also learned how to host web applications
-                    on cloud platforms such as AWS, and Netlify, as well as web socket for real time communication
-                    between servers. To cement my skills, I obtained certificates for PHP Laravel and Blender training
-                    with ODC Rabat, Morocco; there I also did
-                    soft skills training to improve my communication.
-                <div class="flex justify-center p-2">
+    <div class="flex items-start justify-center grid grid-cols md:grid-cols-2">
+        <div class="text-sm md:text-md p-2 text-justify">
+            <div class="text-justify p-2 text-2xl md:4xl font-bold">
+                Get to know me!
+            </div>
+            <div class="p-2 text-white text-sm md:text-md">
+                <p class="py-2 md:py-4">
+                    With over 4 years of experience in software engineering, I bring a robust skill set and a passion
+                    for innovation to every project. I have a strong foundation in a variety of programming languages,
+                    including Java, JavaScript, SQL, C, HTML, CSS, PHP, Python, and R.
+                </p>
+                <p class="py-2 md:py-4">
+                    I have extensive experience with modern coding frameworks such as Angular, SpringBoot, Tailwind, and
+                    Bootstrap. I am proficient in hosting web applications on cloud platforms like AWS and Netlify, and
+                    I have implemented web sockets for real-time communication between servers.
+                </p>
+                <p class="py-2 md:py-4">
+                    In addition to my technical skills, I have also undergone soft skills training to improve my
+                    communication and collaboration abilities. I am committed to continuous learning and growth, and I
+                    am always eager to take on new challenges and expand my knowledge.
+                </p>
+                <p class="py-2 md:py-4">
+                    I am passionate about sharing my insights and knowledge with the developer community. You can
+                    connect with me on LinkedIn, Upwork, and Fiverr for professional services and valuable content
+                    related to web development and programming. I am currently seeking new job opportunities where I can
+                    leverage my skills and experience to make a meaningful impact.
+                </p>
+                <p class="py-2 md:py-4">
+                    Feel free to check out my latest project, Berliz, to see some of my work in action.
+                </p>
+                <p class="flex justify-center p-2">
                     <button
                         class="p-2 py-2 border-2 border-lemon-green text-lemon-green font-sans rounded-md cursor-pointer"
                         (click)="openBerliz('https://berliz.netlify.app/')">
                         Check out Berliz
                     </button>
-                </div>
+                </p>
             </div>
-            <div class="text-mono">
-                <div class="text-light-gray text-center p-4 md:p-8 text-2xl md:4xl font-bold">
-                    My Top Skills
-                </div>
+        </div>
+        <div class="text-sm md:text-md p-2 text-justify">
+            <div class="text-justify p-2 text-2xl md:4xl font-bold">
+                My Top Skills
+            </div>
+            <div class="flex-cols items-start ">
                 <div class="grid grid-cols-2 md:grid-cols-4">
                     <div class="p-4 text-sm md:text-md" *ngFor="let skill of skills">
                         <div

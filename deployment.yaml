@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blessed-tasela
+spec:
+  selector:
+    matchLabels:
+      app: blessed-tasela
+  template:
+    metadata:
+      labels:
+        app: blessed-tasela
+    spec:
+      containers:
+      - name: blessed-tasela
+        image: blessed-tasela:update
+        imagePullPolicy: Never  # This line ensures that Kubernetes uses the local image
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 3001
+        
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: blessed-tasela
+spec:
+  selector:
+    app: blessed-tasela
+  ports:
+  - protocol: TCP
+    port: 3001
+    targetPort: 3001
+  type: LoadBalancer

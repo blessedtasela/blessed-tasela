@@ -28,4 +28,7 @@ npm install @angular/material
 ## Feather icons
 npm i angular-feather
 
+## Build docker image
+ docker build -t blessed-tasela .
+
 
