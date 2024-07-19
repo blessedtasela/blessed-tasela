@@ -32,6 +32,8 @@ import { TestimonialDetailsComponent } from './testimonial-details/testimonial-d
 import { LandingComponent } from './landing/landing.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { MiniEcomJqueryComponent } from './mini-ecom-jquery/mini-ecom-jquery.component';
+import { MiniEcomJqueryDetailsComponent } from './mini-ecom-jquery-details/mini-ecom-jquery-details.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +63,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     LandingComponent,
     ProjectsComponent,
     PortfolioComponent,
+    MiniEcomJqueryComponent,
+    MiniEcomJqueryDetailsComponent,
   ],
   imports: [
     BrowserModule,

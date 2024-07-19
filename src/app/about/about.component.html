@@ -1,9 +1,9 @@
-<div class="shadow-lg text-xl font-mono text-light-gray bg-gradient-to-b from-lemon-green via-dark-blue to-dark-blue">
+<div class="shadow-lg text-xl font-mono text-gray-900 bg-gradient-to-b from-dark-gray via-light-gray to-dark-gray">
     <div class="py-32 flex-col items-center justify-center p-4">
-        <p class="text-2xl md:text-4xl font-mono text-center mb-4 text-white font-bold">
+        <p class="text-2xl md:text-4xl font-mono text-center mb-4 font-bold">
             About Me
         </p>
-        <p class="mt-4 w-12 mx-auto border-2 p-1 bg--blue rounded-lg border-dark-blue"></p>
+        <p class="mt-4 w-12 mx-auto border-2 p-1 bg-lemon-blue rounded-lg border-lemon-blue"></p>
         <p class="p-4 px-0 md:px-32 mt-4 text-center text-sm md:text-xl">
             Here you will find more information about me, what i do, and my top skills mostly in terms of programming
             and technology
@@ -14,7 +14,7 @@
             <div class="text-justify p-2 text-2xl md:4xl font-bold">
                 Get to know me!
             </div>
-            <div class="p-2 text-white text-sm md:text-md">
+            <div class="p-2 text-sm md:text-md">
                 <p class="py-2 md:py-4">
                     With over 4 years of experience in software engineering, I bring a robust skill set and a passion
                     for innovation to every project. I have a strong foundation in a variety of programming languages,
@@ -41,7 +41,7 @@
                 </p>
                 <p class="flex justify-center p-2">
                     <button
-                        class="p-2 py-2 border-2 border-lemon-green text-lemon-green font-sans rounded-md cursor-pointer"
+                        class="p-2 py-2 border-2 border-lemon-blue bg-lemon-blue text-white font-sans rounded-md cursor-pointer"
                         (click)="openBerliz('https://berliz.netlify.app/')">
                         Check out Berliz
                     </button>
@@ -56,7 +56,7 @@
                 <div class="grid grid-cols-2 md:grid-cols-4">
                     <div class="p-4 text-sm md:text-md" *ngFor="let skill of skills">
                         <div
-                            class="text-center p-1 px-2 w-30 border-2 border-lemon-green text-light-gray font-sans rounded-md cursor-pointer">
+                            class="text-center p-1 px-2 w-30 border-2 bg-bold-gray border-bold-gray text-gray-500 font-bold font-sans rounded-md cursor-pointer">
                             {{ skill.skill }}
                         </div>
                     </div>

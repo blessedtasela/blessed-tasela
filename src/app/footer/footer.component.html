@@ -3,23 +3,23 @@
         <div class="grid grid-cols md:grid-cols-2 lg:grid-cols-3 mx-auto gap-2 lg:gap-0">
             <div class="flex justify-center items-center">
                 <h3 class="text-white pl-5">
-                    &copy;<span class="text-lemon-green font-bold">
+                    &copy;<span class="text-lemon-blue font-bold">
                         Blessed Tasela.</span> All right reserved
                 </h3>
             </div>
             <div class="flex justify-center items-center">
                 <h3 class="text-white flex">
                   Developed by
-                    <span class="ml-2 text-lemon-green font-bold cursor-pointer" (click)="openBlessedTasela()">
+                    <span class="ml-2 text-lemon-blue font-bold cursor-pointer" (click)="openBlessedTasela()">
                         Blessed Tasela
                     </span>
                 </h3>
             </div>
             <div class="grid gap-2 grid-cols-3 md:grid-cols-6  justify-center items-center">
-                <div class="text-light-gray flex items-center justify-center p-2"  *ngFor="let contact of contacts">
+                <div class="text-gray-900 flex items-center justify-center p-2"  *ngFor="let contact of contacts">
                     <a href="{{ contact.url }}" target="_blank" rel="noopener noreferrer">
-                        <i-feather name="{{ contact.icon }}" class="p-1 text-light-gray font-bold rounded-md 
-                        cursor-pointer hover:scale-110 hover:text-lemon-green" style="width: 30px;">
+                        <i-feather name="{{ contact.icon }}" class="p-1 text-white font-bold rounded-md 
+                        cursor-pointer hover:scale-110 hover:text-lemon-blue" style="width: 30px;">
                         </i-feather>
                     </a>
                 </div>

@@ -6,22 +6,27 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor: {
-        'dark-blue': '#0A192F',
-        'light-gray': '#C7D5D1',
-        'lemon-green': '#48B0A0',
-      },textColor:{
-        'lemon-green': '#48B0A0',
-        'light-gray': '#C7D5D1',
-        'dark-blue': '#0A192F',
+        'dark-gray': '#EFEFEF',
+        'light-gray': '#FAFAFA',
+        'bold-gray': '#E7E7E7',
+        'lemon-blue': '#7843E9',
+      }, textColor: {
+        'lemon-blue': '#7843E9',
+        'bold-gray': '#E7E7E7',
+        'light-gray': '#FAFAFA',
+        'dark-gray': '#EFEFEF',
       },
       borderColor: {
-        'lemon-green': '#48B0A0',
-        'light-gray': '#C7D5D1',
+        'dark-gray': '#EFEFEF',
+        'bold-gray': '#E7E7E7',
+        'lemon-blue': '#7843E9',
+        'light-gray': '#FAFAFA',
       },
       colors: {
-        'dark-blue': '#0A192F',
-        'light-gray': '#C7D5D1',
-        'lemon-green': '#48B0A0',
+        'dark-gray': '#EFEFEF',
+        'bold-gray': '#E7E7E7',
+        'light-gray': '#FAFAFA',
+        'lemon-blue': '#7843E9',
       },
     },
   },

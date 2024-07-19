@@ -1,92 +1,93 @@
-<nav class="shadow-lg rounded-b-lg flex fixed w-full justify-center justify-between md:justify-center 
-  text-sm text-light-gray bg-dark-blue">
-  <div class="font-sans cursor-pointer p-2 mx-4" >
-    <img style="width: 50px;" src="../../assets/blessed-4.jpeg" class="rounded-full">
+<nav
+  class="bg-white shadow-lg rounded-b-lg flex fixed w-full justify-center justify-between md:justify-center text-md font-bold text-gray-900">
+  <div class="font-sans flex items-center justify-start p-1 mx-2 gap-4">
+    <a href="/#home" (click)="scrollToComponent('home')" class="flex items-center justify-start gap-2">
+      <img class="rounded-full w-16" src="../../assets/blessed-4.jpeg">
+      <div class="mx-auto">
+        <div class=" text-center font-bold text-md md:text-xl">
+          Blessed Tasela
+        </div>
+      </div>
+    </a>
   </div>
   <div class="flex items-center justify-center flex-1">
-    <div class="cursor-pointer block md:hidden">
-      <span class="text-lemon-green border-2 border-lemon-green p-1 rounded-md" (click)="openResume()">
-        Resume</span>
+    <div
+      class="cursor-pointer hover:scale-105 hover:text-lemon-blue flex items-center justify-center mt-1 block md:hidden">
+      <span class="text-gray-900 border-2 border-lemon-blue p-1 rounded-md hover:text-lemon-blue"
+        (click)="openResume()">
+        Resume
+      </span>
     </div>
     <div class="hidden md:block">
       <ul class="p-4 flex items-center gap-4 lg:gap-8 font-sans">
-        <div class="cursor-pointer">
-          <span class="text-lemon-green border-2 border-lemon-green p-1 rounded-md" (click)="openResume()">
-            Resume</span>
-        </div>
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-green">
+        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
           <a href="/#home" (click)="scrollToComponent('home')">
-            <span class="text-lemon-green">01. </span>Home
+            Home
           </a>
         </li>
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-green">
+        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
           <a href="/#about" (click)="scrollToComponent('about')">
-            <span class="text-lemon-green">02. </span>About
+            About
           </a>
         </li>
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-green">
+        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
           <a href="/#contact" (click)="scrollToComponent('contact')">
-            <span class="text-lemon-green">03. </span>Contact
+            Contact
           </a>
         </li>
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-green">
+        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
           <a href="/#projects" (click)="scrollToComponent('projects')">
-            <span class="text-lemon-green">04. </span>Projects
+            Projects
           </a>
         </li>
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-green">
+        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
           <a href="/#services" (click)="scrollToComponent('services')">
-            <span class="text-lemon-green">05. </span>Services
+            Services
           </a>
         </li>
-
       </ul>
     </div>
   </div>
   <div class="flex justify-end items-center mx-4">
     <ul class="p-4 flex items-center font-mono hidden md:flex">
-      <li class="cursor-pointer hover:scale-105 hover:text-lemon-green">
-        <a href="https://www.instagram.com/tasela_berliz/">
-          <i-feather name="instagram" class="  p-2 cursor-pointer hover:scale-105 hover:text-lemon-green"
+      <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
+        <a href="https://www.instagram.com/tasela_berliz/" target="_blank">
+          <i-feather name="instagram" class="  p-2 cursor-pointer hover:scale-105 hover:text-lemon-blue"
             style="width: 40px;"></i-feather>
         </a>
       </li>
-      <li class="cursor-pointer hover:scale-105 hover:text-lemon-green">
+      <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue" target="_blank">
         <a href="https://www.linkedin.com/in/blessed-tasela-b9071920a/">
-          <i-feather name="linkedIn" class="  p-2 cursor-pointer hover:scale-105 hover:text-lemon-green"
+          <i-feather name="linkedIn" class="  p-2 cursor-pointer hover:scale-105 hover:text-lemon-blue"
             style="width: 40px;"></i-feather>
         </a>
       </li>
-      <li class="cursor-pointer hover:scale-105 hover:text-lemon-green">
+      <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue" target="_blank">
         <a href="https://www.facebook.com/tasela.berlizyo/">
-          <i-feather name="facebook" class="  p-2 cursor-pointer hover:scale-105 hover:text-lemon-green"
+          <i-feather name="facebook" class="  p-2 cursor-pointer hover:scale-105 hover:text-lemon-blue"
             style="width: 40px;"></i-feather>
         </a>
       </li>
-      <li class="cursor-pointer hover:scale-105 hover:text-lemon-green">
+      <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue" target="_blank">
         <a href="https://github.com/blessedtasela">
-          <i-feather name="github" class="p-2 cursor-pointer hover:scale-105 hover:text-lemon-green"
+          <i-feather name="github" class="p-2 cursor-pointer hover:scale-105 hover:text-lemon-blue"
             style="width: 40px;"></i-feather>
         </a>
       </li>
-      <li class="cursor-pointer hover:scale-105 hover:text-lemon-green text-sm mt-1">
-        <span class="flex items-center justify-center border-2 border-lemon-green rounded-md p-1">
-          <a href="mailto:taselablessed@gmail.com" class="-mt-2">
-            <span>Get in touch</span>
-            <i-feather name="arrow-right" class="p-3 cursor-pointer hover:scale-105 hover:text-lemon-green"
-              style="width: 40px;">
-            </i-feather>
-          </a>
+      <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue text-sm mt-1 ">
+        <span class="text-gray-900 border-2 border-lemon-blue p-1 rounded-md hover:text-lemon-blue"
+          (click)="openResume()">
+          Resume
         </span>
       </li>
     </ul>
   </div>
   <div *ngIf="!menuOpen" class="md:hidden p-2">
-    <i-feather name="align-justify" (click)="toggleMenu()" class="text-lemon-green  p-2 cursor-pointer md:hidden"
+    <i-feather name="align-justify" (click)="toggleMenu()" class="text-lemon-blue  p-2 cursor-pointer md:hidden"
       style="width: 40px;"></i-feather>
   </div>
   <div *ngIf="menuOpen" class="md:hidden p-2 z-10">
-    <i-feather name="x" (click)="toggleMenu()" class=" text-lemon-green p-2 cursor-pointer md:hidden"
+    <i-feather name="x" (click)="toggleMenu()" class=" text-lemon-blue p-2 cursor-pointer md:hidden"
       style="width: 40px;"></i-feather>
   </div>
   <div class=" md:hidden block h-full w-full bg-white text-dark-blue transform duration-400 
@@ -94,68 +95,64 @@
     <div class="flex flex-col items-center justify-center gap-8 text-xl mt-4">
       <ul class="p-4 flex-cols items-center justify-center gap-4 space-y-12 font-mono mt-10 gap-16">
         <div class="cursor-pointer">
-          <span class="text-lemon-green border-2 border-lemon-green p-1 rounded-md" (click)="openResume()">
+          <span class="text-gray-900 border-2 border-lemon-blue p-1 rounded-md" (click)="openResume()">
             Resume</span>
         </div>
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-green">
+        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
           <a href="/#home" (click)="scrollToComponent('home')">
-            <span class="text-lemon-green">01. </span>Home
+            Home
           </a>
         </li>
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-green">
+        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
           <a href="/#about" (click)="scrollToComponent('about')">
-            <span class="text-lemon-green">02. </span>About
+            About
           </a>
         </li>
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-green">
+        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
           <a href="/#contact" (click)="scrollToComponent('contact')">
-            <span class="text-lemon-green">03. </span>Contact
+            Contact
           </a>
         </li>
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-green">
+        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
           <a href="/#projects" (click)="scrollToComponent('projects')">
-            <span class="text-lemon-green">04. </span>Projects
+            Projects
           </a>
         </li>
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-green">
+        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
           <a href="/#services" (click)="scrollToComponent('services')">
-            <span class="text-lemon-green">05. </span>Services
+            Services
           </a>
         </li>
       </ul>
       <ul class="p-4 flex items-center justify-center font-mono font-bold " [ngClass]="{'hidden': !menuOpen}">
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-green">
-          <a href="https://www.instagram.com/tasela_berliz/">
-            <i-feather name="instagram" class="  p-2 cursor-pointer hover:scale-105 hover:text-lemon-green"
+        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
+          <a href="https://www.instagram.com/tasela_berliz/" target="_blank">
+            <i-feather name="instagram" class="  p-2 cursor-pointer hover:scale-105 hover:text-lemon-blue"
               style="width: 40px;"></i-feather>
           </a>
         </li>
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-green">
-          <a href="https://www.linkedin.com/in/blessed-tasela-b9071920a/">
-            <i-feather name="linkedIn" class="  p-2 cursor-pointer hover:scale-105 hover:text-lemon-green"
+        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
+          <a href="https://www.linkedin.com/in/blessed-tasela-b9071920a/" target="_blank">
+            <i-feather name="linkedIn" class="  p-2 cursor-pointer hover:scale-105 hover:text-lemon-blue"
               style="width: 40px;"></i-feather>
           </a>
         </li>
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-green">
-          <a href="https://www.facebook.com/tasela.berlizyo/">
-            <i-feather name="facebook" class="  p-2 cursor-pointer hover:scale-105 hover:text-lemon-green"
+        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
+          <a href="https://www.facebook.com/tasela.berlizyo/" target="_blank">
+            <i-feather name="facebook" class="  p-2 cursor-pointer hover:scale-105 hover:text-lemon-blue"
               style="width: 40px;"></i-feather>
           </a>
         </li>
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-green">
-          <a href="https://github.com/blessedtasela">
-            <i-feather name="github" class="p-2 cursor-pointer hover:scale-105 hover:text-lemon-green"
+        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
+          <a href="https://github.com/blessedtasela" target="_blank">
+            <i-feather name="github" class="p-2 cursor-pointer hover:scale-105 hover:text-lemon-blue"
               style="width: 40px;"></i-feather>
           </a>
         </li>
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-green text-sm mt-1">
-          <span class="flex items-center justify-center border-2 border-lemon-green rounded-md p-1">
-            <a href="mailto:taselablessed@gmail.com" class="-mt-2">
-              <span>Get in touch</span>
-              <i-feather name="arrow-right" class="p-3 cursor-pointer hover:scale-105 hover:text-lemon-green"
-                style="width: 40px;">
-              </i-feather>
-            </a>
+        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue text-sm mt-1 ">
+          <span class="text-gray-900 border-2 border-lemon-blue p-1 rounded-md hover:text-lemon-blue"
+            (click)="openResume()">
+            Resume
           </span>
         </li>
       </ul>
