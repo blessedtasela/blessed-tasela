@@ -34,6 +34,10 @@ import { ProjectsComponent } from './projects/projects.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { MiniEcomJqueryComponent } from './mini-ecom-jquery/mini-ecom-jquery.component';
 import { MiniEcomJqueryDetailsComponent } from './mini-ecom-jquery-details/mini-ecom-jquery-details.component';
+import { FightFusionComponent } from './fight-fusion/fight-fusion.component';
+import { FightFusionDetailsComponent } from './fight-fusion-details/fight-fusion-details.component';
+import { MusicUiComponent } from './music-ui/music-ui.component';
+import { MusicUiDetailsComponent } from './music-ui-details/music-ui-details.component';
 
 @NgModule({
   declarations: [
@@ -65,6 +69,10 @@ import { MiniEcomJqueryDetailsComponent } from './mini-ecom-jquery-details/mini-
     PortfolioComponent,
     MiniEcomJqueryComponent,
     MiniEcomJqueryDetailsComponent,
+    FightFusionComponent,
+    FightFusionDetailsComponent,
+    MusicUiComponent,
+    MusicUiDetailsComponent,
   ],
   imports: [
     BrowserModule,
