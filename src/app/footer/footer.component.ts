@@ -47,7 +47,7 @@ export class FooterComponent {
 
   constructor() { }
   openBlessedTasela() {
-    window.open('https://blessed-tasela.netlify.app/', '_blank');
+    window.open('https://www.linkedin.com/in/blessed-tasela-b9071920a/', '_blank');
   }
 
 }
