@@ -30,6 +30,7 @@ export class AboutComponent {
     { id: 21, skill: 'Vite' },
     { id: 22, skill: 'Heroku' },
     { id: 23, skill: 'Android Studio' },
+    { id: 24, skill: 'PHP' },
   ];
   
   constructor() { }
