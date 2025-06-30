@@ -1,8 +1,15 @@
-<section class="bg-gradient-to-b from-dark-gray via-light-gray to-dark-gray h-screen">
-  <div class="w-full h-full ">
+<section class="min-h-screen bg-gradient-to-b from-light-gray via-white to-light-gray text-gray-900">
+  <div class="flex flex-col min-h-screen">
     <app-navbar></app-navbar>
     <hr class="border-lemon-blue">
-    <router-outlet></router-outlet>
+
+    <main class="flex-1 container mx-auto px-4 py-8">
+      <router-outlet></router-outlet>
+    </main>
+
     <app-footer id="footer"></app-footer>
   </div>
 </section>
+<!-- 
+  <i-feather name="arrow-up" class="fixed bottom-4 right-4 cursor-pointer hover:scale-105 hover:text-lemon-blue"
+    (click)="scrollToTop()"></i-feather> -->

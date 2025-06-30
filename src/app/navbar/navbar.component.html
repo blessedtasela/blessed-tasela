@@ -1,160 +1,98 @@
-<nav
-  class="bg-white shadow-lg rounded-b-lg flex fixed w-full justify-center justify-between md:justify-center text-md font-bold text-gray-900">
-  <div class="font-sans flex items-center justify-start p-1 mx-2 gap-4">
-    <a href="/#home" (click)="scrollToComponent('home')" class="flex items-center justify-start gap-2">
-      <img class="rounded-full w-16" src="../../assets/blessed-4.jpeg">
-      <div class="mx-auto">
-        <div class=" text-center font-bold text-md md:text-xl">
-          Blessed Tasela
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="flex items-center justify-center flex-1">
-    <div
-      class="cursor-pointer hover:scale-105 hover:text-lemon-blue flex items-center justify-center mt-1 block md:hidden">
-      <span class="text-gray-900 border-2 border-lemon-blue p-1 rounded-md hover:text-lemon-blue"
-        (click)="openResume()">
-        Resume
-      </span>
+<!-- FULL RESPONSIVE MODERNIZED NAVIGATION + FOOTER TO MATCH -->
+<nav class="bg-white shadow-lg rounded-b-lg fixed w-full top-0 left-0 right-0 z-50 transition-all duration-300">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <!-- Logo and Name -->
+    <div class="flex items-center gap-4">
+      <a href="/#home" (click)="scrollToComponent('home')" class="flex items-center gap-2">
+        <img class="rounded-full w-12 h-12" src="../../assets/blessed-5.jpeg" alt="Blessed Tasela" />
+        <div class="font-bold text-gray-900 text-lg md:text-2xl">Blessed Tasela</div>
+      </a>
     </div>
-    <div class="hidden md:block">
-      <ul class="p-4 flex items-center gap-4 lg:gap-8 font-sans">
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
-          <a href="/#home" (click)="scrollToComponent('home')">
-            Home
-          </a>
-        </li>
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
-          <a href="/#about" (click)="scrollToComponent('about')">
-            About
-          </a>
-        </li>
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
-          <a href="/#contact" (click)="scrollToComponent('contact')">
-            Contact
-          </a>
-        </li>
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
-          <a href="/#projects" (click)="scrollToComponent('projects')">
-            Projects
-          </a>
-        </li>
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
-          <a href="/#services" (click)="scrollToComponent('services')">
-            Services
-          </a>
-        </li>
-      </ul>
+
+    <!-- Desktop Navigation -->
+    <div class="hidden lg:flex items-center gap-8 text-sm md:text-lg font-semibold text-gray-900">
+      <a href="/#home" (click)="scrollToComponent('home')"
+         class="hover:text-white hover:bg-lemon-blue px-3 py-1 rounded transition-all">Home</a>
+      <a href="/#about" (click)="scrollToComponent('about')"
+         class="hover:text-white hover:bg-lemon-blue px-3 py-1 rounded transition-all">About</a>
+      <a href="/#contact" (click)="scrollToComponent('contact')"
+         class="hover:text-white hover:bg-lemon-blue px-3 py-1 rounded transition-all">Contact</a>
+      <a href="/#projects" (click)="scrollToComponent('projects')"
+         class="hover:text-white hover:bg-lemon-blue px-3 py-1 rounded transition-all">Projects</a>
+      <a href="/#services" (click)="scrollToComponent('services')"
+         class="hover:text-white hover:bg-lemon-blue px-3 py-1 rounded transition-all">Services</a>
+    </div>
+
+    <!-- Social Icons (Desktop) -->
+    <div class="hidden lg:flex items-center gap-4">
+      <a href="https://www.instagram.com/blessed_tasela/" target="_blank">
+        <i-feather name="instagram" style="width: 30px;"
+                   class="text-gray-900 hover:text-lemon-blue hover:scale-110 transition-all duration-300"></i-feather>
+      </a>
+      <a href="https://www.linkedin.com/in/blessed-tasela-b9071920a/" target="_blank">
+        <i-feather name="linkedin" style="width: 30px;"
+                   class="text-gray-900 hover:text-lemon-blue hover:scale-110 transition-all duration-300"></i-feather>
+      </a>
+      <a href="https://www.facebook.com/tasela.berliz/" target="_blank">
+        <i-feather name="facebook" style="width: 30px;"
+                   class="text-gray-900 hover:text-lemon-blue hover:scale-110 transition-all duration-300"></i-feather>
+      </a>
+      <a href="https://github.com/blessedtasela" target="_blank">
+        <i-feather name="github" style="width: 30px;"
+                   class="text-gray-900 hover:text-lemon-blue hover:scale-110 transition-all duration-300"></i-feather>
+      </a>
+    </div>
+
+    <!-- Mobile Menu Icon -->
+    <div class="lg:hidden">
+      <i-feather name="align-justify" (click)="toggleMenu()" class="text-gray-900 text-2xl cursor-pointer"></i-feather>
     </div>
   </div>
-  <div class="flex justify-end items-center mx-4">
-    <ul class="p-4 flex items-center font-mono hidden md:flex">
-      <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
-        <a href="https://www.instagram.com/tasela_berliz/" target="_blank">
-          <i-feather name="instagram" class="  p-2 cursor-pointer hover:scale-105 hover:text-lemon-blue"
-            style="width: 40px;"></i-feather>
-        </a>
-      </li>
-      <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue" >
-        <a href="https://www.linkedin.com/in/blessed-tasela-b9071920a/" target="_blank">
-          <i-feather name="linkedIn" class="  p-2 cursor-pointer hover:scale-105 hover:text-lemon-blue"
-            style="width: 40px;"></i-feather>
-        </a>
-      </li>
-      <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
-        <a href="https://www.facebook.com/tasela.berlizyo/" target="_blank">
-          <i-feather name="facebook" class="  p-2 cursor-pointer hover:scale-105 hover:text-lemon-blue"
-            style="width: 40px;"></i-feather>
-        </a>
-      </li>
-      <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
-        <a href="https://github.com/blessedtasela" target="_blank">
-          <i-feather name="github" class="p-2 cursor-pointer hover:scale-105 hover:text-lemon-blue"
-            style="width: 40px;"></i-feather>
-        </a>
-      </li>
-      <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue text-sm mt-1 ">
-        <span class="text-gray-900 border-2 border-lemon-blue p-1 rounded-md hover:text-lemon-blue"
-          (click)="openResume()">
-          Resume
-        </span>
-      </li>
-    </ul>
-  </div>
-  <div *ngIf="!menuOpen" class="md:hidden p-2">
-    <i-feather name="align-justify" (click)="toggleMenu()" class="text-lemon-blue  p-2 cursor-pointer md:hidden"
-      style="width: 40px;"></i-feather>
-  </div>
-  <div *ngIf="menuOpen" class="md:hidden p-2 z-10">
-    <i-feather name="x" (click)="toggleMenu()" class=" text-lemon-blue p-2 cursor-pointer md:hidden"
-      style="width: 40px;"></i-feather>
-  </div>
-  <div class=" md:hidden block h-full w-full bg-white text-dark-blue transform duration-400 
-  ease-in-out transition-opacity fixed" [ngClass]="{'hidden': !menuOpen}">
-    <div class="flex flex-col items-center justify-center gap-8 text-xl mt-4">
-      <ul class="p-4 flex-cols items-center justify-center gap-4 space-y-12 font-mono mt-10 gap-16">
-        <div class="cursor-pointer">
-          <span class="text-gray-900 border-2 border-lemon-blue p-1 rounded-md" (click)="openResume()">
-            Resume</span>
-        </div>
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
-          <a href="/#home" (click)="scrollToComponent('home')">
-            Home
-          </a>
-        </li>
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
-          <a href="/#about" (click)="scrollToComponent('about')">
-            About
-          </a>
-        </li>
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
-          <a href="/#contact" (click)="scrollToComponent('contact')">
-            Contact
-          </a>
-        </li>
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
-          <a href="/#projects" (click)="scrollToComponent('projects')">
-            Projects
-          </a>
-        </li>
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
-          <a href="/#services" (click)="scrollToComponent('services')">
-            Services
-          </a>
-        </li>
+
+  <!-- Mobile Menu -->
+  <div *ngIf="menuOpen"
+       class="lg:hidden fixed inset-0 bg-gradient-to-br from-black via-gray-400 to-black z-50 overflow-hidden backdrop-blur-md">
+    <!-- Disable background scroll -->
+    <style>body { overflow: hidden; }</style>
+
+    <!-- Close Icon -->
+    <div class="flex justify-end p-6">
+      <i-feather name="x" (click)="toggleMenu()" class="text-lemon-blue text-3xl cursor-pointer hover:scale-110 transition-all duration-300"></i-feather>
+    </div>
+
+    <!-- Mobile Navigation Links -->
+    <div class="flex flex-col items-center justify-center gap-10 mt-4 px-6 text-white">
+      <ul class="text-2xl font-bold space-y-6 text-center">
+        <li><a href="/#home" (click)="scrollToComponent('home'); toggleMenu()"
+               class="hover:bg-lemon-blue px-6 py-2 rounded-xl transition-all">Home</a></li>
+        <li><a href="/#about" (click)="scrollToComponent('about'); toggleMenu()"
+               class="hover:bg-lemon-blue px-6 py-2 rounded-xl transition-all">About</a></li>
+        <li><a href="/#contact" (click)="scrollToComponent('contact'); toggleMenu()"
+               class="hover:bg-lemon-blue px-6 py-2 rounded-xl transition-all">Contact</a></li>
+        <li><a href="/#projects" (click)="scrollToComponent('projects'); toggleMenu()"
+               class="hover:bg-lemon-blue px-6 py-2 rounded-xl transition-all">Projects</a></li>
+        <li><a href="/#services" (click)="scrollToComponent('services'); toggleMenu()"
+               class="hover:bg-lemon-blue px-6 py-2 rounded-xl transition-all">Services</a></li>
       </ul>
-      <ul class="p-4 flex items-center justify-center font-mono font-bold " [ngClass]="{'hidden': !menuOpen}">
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
-          <a href="https://www.instagram.com/tasela_berliz/" target="_blank">
-            <i-feather name="instagram" class="  p-2 cursor-pointer hover:scale-105 hover:text-lemon-blue"
-              style="width: 40px;"></i-feather>
-          </a>
-        </li>
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
-          <a href="https://www.linkedin.com/in/blessed-tasela-b9071920a/" target="_blank">
-            <i-feather name="linkedIn" class="  p-2 cursor-pointer hover:scale-105 hover:text-lemon-blue"
-              style="width: 40px;"></i-feather>
-          </a>
-        </li>
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
-          <a href="https://www.facebook.com/tasela.berlizyo/" target="_blank">
-            <i-feather name="facebook" class="  p-2 cursor-pointer hover:scale-105 hover:text-lemon-blue"
-              style="width: 40px;"></i-feather>
-          </a>
-        </li>
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue">
-          <a href="https://github.com/blessedtasela" target="_blank">
-            <i-feather name="github" class="p-2 cursor-pointer hover:scale-105 hover:text-lemon-blue"
-              style="width: 40px;"></i-feather>
-          </a>
-        </li>
-        <li class="cursor-pointer hover:scale-105 hover:text-lemon-blue text-sm mt-1 ">
-          <span class="text-gray-900 border-2 border-lemon-blue p-1 rounded-md hover:text-lemon-blue"
-            (click)="openResume()">
-            Resume
-          </span>
-        </li>
+
+      <!-- Mobile Social Icons -->
+      <ul class="flex justify-center gap-6 mt-10">
+        <li><a href="https://www.instagram.com/blessed_tasela/" target="_blank">
+          <i-feather name="instagram" style="width: 32px;"
+                     class="text-white hover:text-lemon-blue hover:scale-110 transition-all duration-300"></i-feather>
+        </a></li>
+        <li><a href="https://www.linkedin.com/in/blessed-tasela-b9071920a/" target="_blank">
+          <i-feather name="linkedin" style="width: 32px;"
+                     class="text-white hover:text-lemon-blue hover:scale-110 transition-all duration-300"></i-feather>
+        </a></li>
+        <li><a href="https://www.facebook.com/tasela.berliz/" target="_blank">
+          <i-feather name="facebook" style="width: 32px;"
+                     class="text-white hover:text-lemon-blue hover:scale-110 transition-all duration-300"></i-feather>
+        </a></li>
+        <li><a href="https://github.com/blessedtasela" target="_blank">
+          <i-feather name="github" style="width: 32px;"
+                     class="text-white hover:text-lemon-blue hover:scale-110 transition-all duration-300"></i-feather>
+        </a></li>
       </ul>
     </div>
   </div>

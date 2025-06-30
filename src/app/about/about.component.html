@@ -1,61 +1,61 @@
-<div class="shadow-lg text-xl font-mono text-gray-900 bg-gradient-to-b from-dark-gray via-light-gray to-dark-gray">
-    <div class="py-32 flex-col items-center justify-center p-4">
-        <p class="text-2xl md:text-4xl font-mono text-center mb-4 font-bold">
-            About Me
-        </p>
-        <p class="mt-4 w-12 mx-auto border-2 p-1 bg-lemon-blue rounded-lg border-lemon-blue"></p>
-        <p class="p-4 px-0 md:px-32 mt-4 text-center text-sm md:text-xl">
-            Here you will find more information about me, what I do, and my top skills mostly in terms of programming and technology.
-        </p>
-    </div>
-    <div class="flex items-start justify-center grid grid-cols md:grid-cols-2">
-        <div class="text-sm md:text-md p-2 text-justify">
-            <div class="text-justify p-2 text-2xl md:4xl font-bold">
-                Get to know me!
-            </div>
-            <div class="p-2 text-sm md:text-md">
-                <p class="py-2 md:py-4">
-                    With over 3 years of experience in software development, I bring a versatile and innovative approach to every project. 
-                    I have a strong foundation in various programming languages like Java, JavaScript, SQL, HTML, CSS, Python, and PHP.
+<section id="about" class="bg-light-gray py-20 font-sans text-rich-black">
+    <div class="container mx-auto px-6">
+        <!-- Heading -->
+        <header class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-lemon-blue">About Me</h2>
+            <div class="w-24 h-1 bg-lemon-blue mx-auto mt-2 rounded-full"></div>
+            <p class="mt-4 text-gray-700 max-w-2xl mx-auto">
+                Learn more about my background, my passions in software and fitness, and the skills I bring to every
+                project.
+            </p>
+        </header>
+
+        <!-- Content Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+            <!-- Bio Column -->
+            <div class="space-y-6">
+                <h3 class="text-2xl font-semibold">Where Tech Meets Passion</h3>
+                <p>
+                    With over <span class="font-semibold text-lemon-blue">3 years</span> in software engineering, I’ve
+                    built full‑stack applications using Java, JavaScript, SQL, Python, and more.
                 </p>
-                <p class="py-2 md:py-4">
-                    My expertise includes modern frameworks like Angular, React, React Native, Next.js, Spring Boot, Tailwind, Vite, and Bootstrap. 
-                    I'm proficient in cloud platforms such as Heroku and Netlify, and skilled in deploying high-performance applications.
+                <p>
+                    I specialize in frameworks like <span class="font-semibold">Angular</span>, <span
+                        class="font-semibold">React</span>, <span class="font-semibold">Spring Boot</span>, and design
+                    with <span class="font-semibold">Tailwind</span>.
                 </p>
-                <p class="py-2 md:py-4">
-                    Aside from technical skills, I prioritize communication and teamwork, having undergone training to refine my soft skills. 
-                    I'm always eager to take on new challenges, learn cutting-edge technologies, and grow as both a developer and collaborator.
+                <p>
+                    Beyond code, I value <span class="font-semibold">communication</span> and <span
+                        class="font-semibold">teamwork</span>, always learning and sharing knowledge in the dev
+                    community.
                 </p>
-                <p class="py-2 md:py-4">
-                    Passionate about sharing knowledge with the developer community, you can connect with me on LinkedIn, Upwork, or Fiverr for professional services 
-                    and discussions on software development. I’m currently exploring new opportunities to make a meaningful impact through my work.
+                <p>
+                    Passionate about health, I also craft personalized fitness plans as a certified trainer—bringing the
+                    same focus and energy to both disciplines.
                 </p>
-                <p class="py-2 md:py-4">
-                    Feel free to explore my latest project, Berliz, to see some of my work in action.
-                </p>
-                <p class="flex justify-center p-2">
-                    <button
-                        class="p-2 py-2 border-2 border-lemon-blue bg-lemon-blue text-white font-sans rounded-md cursor-pointer"
-                        (click)="openBerliz('https://berliz.fitness')">
+                <p>I created Berliz to unite my love for fitness and software. It’s a platform built with Spring Boot,
+                    Angular, and Strapi that empowers trainers and gyms to manage programs and track progress—making
+                    health and results easier to achieve, and harder to lose.</p>
+                <div class="text-center">
+                    <button (click)="openBerliz('https://berliz.fitness')"
+                        class="inline-block bg-lemon-blue text-white px-8 py-3 rounded-2xl font-medium shadow-card hover:shadow-lg transition">
                         Check out Berliz
                     </button>
-                </p>
+                </div>
             </div>
-        </div>
-        <div class="text-sm md:text-md p-2 text-justify">
-            <div class="text-justify p-2 text-2xl md:4xl font-bold">
-                My Top Skills
-            </div>
-            <div class="flex-cols items-start">
-                <div class="grid grid-cols-2 md:grid-cols-3">
-                    <div class="p-4 text-sm md:text-md" *ngFor="let skill of skills">
-                        <div
-                            class="text-center p-1 px-2 w-30 border-2 bg-bold-gray border-bold-gray text-gray-500 font-bold font-sans rounded-md cursor-pointer">
-                            {{ skill.skill }}
-                        </div>
+
+            <!-- Skills Column -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-6">Tools of My Trade</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                    <div *ngFor="let skill of skills"
+                        class="flex items-center justify-center bg-white border border-bold-gray rounded-xl py-3 px-2 hover:bg-lemon-blue hover:text-white transition">
+                        {{ skill.skill }}
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
-</div>
+</section>

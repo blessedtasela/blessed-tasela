@@ -1,27 +1,22 @@
-<div class="p-4 md:p-12 shadow-lg text-xl font-mono text-bold-gray 
-            bg-gradient-to-b from-dark-gray via-light-gray to-dark-gray">
-    <div class="h-screen flex flex-col items-center justify-center text-center text-gray-900 font-mono">
-        <div class="text-2xl md:text-6xl text-center mb-2 font-bold">
-            Hello, I am Blessed Tasela
-        </div>
-        <div class="max-w-6xl mt-4">
-            <div class="text-sm md:text-lg p-2">
-                I am an experienced software engineer and personal trainer, dedicated to crafting tailored solutions for
-                success. With a focus on results, I bring my expertise in software development to deliver optimized apps
-                that meet your needs. Outside of software, I specialize in creating personalized fitness programs to
-                help
-                you achieve your health goals. Trust me to drive your projects forward with professional and
-                personalized
-                services.
-                <div class="mt-16 md:mt-8">
-                    <button
-                        class="bg-lemon-blue text-dark-blue p-2 px-8 md:px-12 rounded-md text-xl md:text-2xl font-bold text-white">
-                        <a href="/#projects" (click)="scrollToComponent('projects')">
-                            Projects
-                        </a>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="flex items-center justify-center h-screen bg-gradient-to-b from-light-gray via-white to-light-gray text-rich-black font-sans">
+  <div class="text-center px-4">
+    <h1 class="text-3xl md:text-6xl font-extrabold tracking-tight text-lemon-blue drop-shadow">
+      Hi, I’m Blessed Tasela
+    </h1>
+
+    <p class="mt-6 max-w-3xl text-base md:text-lg text-gray-700 font-medium leading-relaxed">
+      A passionate <span class="text-lemon-blue font-semibold">Software Engineer</span> and 
+      <span class="text-lemon-blue font-semibold">Personal Trainer</span>, I build tailored solutions with precision and power.
+      From robust full‑stack apps to result‑driven fitness programs, I bring intensity, creativity, and clarity to every challenge.
+    </p>
+
+    <a 
+      href="/#projects"
+      (click)="scrollToComponent('projects')"
+      class="mt-10 inline-block bg-lemon-blue text-white px-8 py-3 rounded-full text-lg md:text-xl font-semibold shadow-card hover:shadow-lg hover:bg-indigo-600 transition-all"
+    >
+      View My Projects
+    </a>
+  </div>
 </div>
+

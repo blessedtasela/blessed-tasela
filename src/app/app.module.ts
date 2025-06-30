@@ -38,6 +38,10 @@ import { FightFusionComponent } from './fight-fusion/fight-fusion.component';
 import { FightFusionDetailsComponent } from './fight-fusion-details/fight-fusion-details.component';
 import { MusicUiComponent } from './music-ui/music-ui.component';
 import { MusicUiDetailsComponent } from './music-ui-details/music-ui-details.component';
+import { SimplyAssignComponent } from './simply-assign/simply-assign.component';
+import { SimplyAssignDetailsComponent } from './simply-assign-details/simply-assign-details.component';
+import { EasylifeComponent } from './easylife/easylife.component';
+import { EasylifeDetailsComponent } from './easylife-details/easylife-details.component';
 
 @NgModule({
   declarations: [
@@ -73,6 +77,10 @@ import { MusicUiDetailsComponent } from './music-ui-details/music-ui-details.com
     FightFusionDetailsComponent,
     MusicUiComponent,
     MusicUiDetailsComponent,
+    SimplyAssignComponent,
+    SimplyAssignDetailsComponent,
+    EasylifeComponent,
+    EasylifeDetailsComponent,
   ],
   imports: [
     BrowserModule,

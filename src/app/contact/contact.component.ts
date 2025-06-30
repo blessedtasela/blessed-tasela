@@ -7,43 +7,50 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
   contacts = [
-    {
-      'id': 1,
-      'url': 'mailto:taselablessed@gmail.com?subject=Book an apointment',
-      'message': 'Email',
-      'icon': 'mail'
-    },
-    {
-      'id': 2,
-      'url': 'https://www.facebook.com/tasela.berlizyo/',
-      'message': 'Facebook',
-      'icon': 'facebook'
-    },
-    {
-      'id': 3,
-      'url': 'https://www.linkedin.com/in/blessed-tasela-b9071920a/',
-      'message': 'Linkedin',
-      'icon': 'linkedIn'
-    },
-    {
-      'id': 4,
-      'url': 'https://github.com/blessedtasela',
-      'message': 'github',
-      'icon': 'github'
-    },
-    {
-      'id': 5,
-      'url': 'https://www.instagram.com/tasela_berliz/',
-      'message': 'Instagrm',
-      'icon': 'instagram'
-    },
-    {
-      'id': 6,
-      'url': 'https://wa.me/+12369900823?text=Hi Blessed, I would like to...',
-      'message': 'Whatsapp',
-      'icon': 'message-circle'
-    }
-  ]
+  {
+    id: 1,
+    url: 'mailto:taselablessed@gmail.com?subject=Book an appointment',
+    message: 'Email',
+    icon: 'mail',
+    handle: 'taselablessed@gmail.com'
+  },
+  {
+    id: 2,
+    url: 'https://www.facebook.com/tasela.berliz/',
+    message: 'Facebook',
+    icon: 'facebook',
+    handle: '@tasela.berliz'
+  },
+  {
+    id: 3,
+    url: 'https://www.linkedin.com/in/blessed-tasela-b9071920a/',
+    message: 'LinkedIn',
+    icon: 'linkedin',
+    handle: 'blessed-tasela'
+  },
+  {
+    id: 4,
+    url: 'https://github.com/blessedtasela',
+    message: 'GitHub',
+    icon: 'github',
+    handle: '@blessedtasela'
+  },
+  {
+    id: 5,
+    url: 'https://www.instagram.com/blessed_tasela/',
+    message: 'Instagram',
+    icon: 'instagram',
+    handle: '@blessed_tasela'
+  },
+  {
+    id: 6,
+    url: 'https://wa.me/+12369900823?text=Hi Blessed, I would like to...',
+    message: 'WhatsApp',
+    icon: 'message-circle',
+    handle: '+1 (236) 990-0823'
+  }
+];
+
 
   constructor() { }
 }

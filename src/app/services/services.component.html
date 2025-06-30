@@ -1,39 +1,65 @@
-<div class="shadow-lg text-xl font-mono text-gray-900 bg-gradient-to-b from-dark-gray via-light-gray to-dark-gray font-mono pb-40">
-    <div class="p-8 py-24">
-        <p class="text-2xl md:text-4xl font-mono text-center mb-4 font-bold">
-            My Top Services
-        </p>
-        <p class="mt-4 w-12 mx-auto border-2 p-1 bg-lemon-blue rounded-lg border-lemon-blue"></p>
-    </div>
-    <div class="grid grid-cols md:grid-cols-2 gap-4 md:gap-12 justify-center items-center">
-        <div class="flex-cols justify-center items-center text-sm md:text-lg p-2 md:p-8">
-            <ul class="space-y-4 text-md md:text-lg font-bold text-gray-900 gap-8">
-                <li><span class="text-lemon-blue font-bold p-2">✓✓</span>Web Development</li>
-                <li><span class="text-lemon-blue font-bold p-2">✓✓</span>Software Development</li>
-                <li><span class="text-lemon-blue font-bold p-2">✓✓</span>Custom Landing Pages</li>
-                <li><span class="text-lemon-blue font-bold p-2">✓✓</span>Photo/Videography</li>
-                <li><span class="text-lemon-blue font-bold p-2">✓✓</span>Fitness and Personal Trainer</li>
-                <li><span class="text-lemon-blue font-bold p-2">✓✓</span>Comprehensive Online Training</li>
-                <li><span class="text-lemon-blue font-bold p-2">✓✓</span>Customized Meal Plannimg</li>
-            </ul>
-            <div class="flex items-center justify-center text-center p-2 md:p-8 mt-4 hidden md:block text-md">
-                <a href="{{ emailLink }}" target="_blank" rel="noopener noreferrer">
-                    <button
-                        class="p-2 py-2 border-2 border-lemon-blue italic text-gray-900 font-bold rounded-md cursor-pointer">
-                        Reach out to me
-                        <i-feather name="mail" class="-mt-1 text-lemon-blue" style="width: 30px;"></i-feather>
-                    </button>
-                </a>
+<section id="services" class="bg-light-gray py-20 font-sans text-rich-black">
+    <div class="container mx-auto px-6">
+        <!-- Section Header -->
+        <header class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-lemon-blue">My Top Services</h2>
+            <div class="w-24 h-1 bg-lemon-blue mx-auto mt-2 rounded-full"></div>
+        </header>
+
+        <!-- Services List -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 text-gray-700">
+            <div
+                class="flex flex-col items-center justify-center p-6 bg-white shadow-lg rounded-xl hover:shadow-xl transition-all">
+                <div class="text-4xl text-lemon-blue mb-4">💻</div>
+                <h3 class="text-2xl font-semibold text-center mb-2">Software Development</h3>
+                <p class="text-center">Building responsive, user-friendly apps with modern technologies.</p>
+            </div>
+            <!-- <div
+                class="flex flex-col items-center justify-center p-6 bg-white shadow-lg rounded-xl hover:shadow-xl transition-all">
+                <div class="text-4xl text-lemon-blue mb-4">🖥️</div>
+                <h3 class="text-2xl font-semibold text-center mb-2">Software Development</h3>
+                <p class="text-center">Custom software solutions tailored to your business needs and goals.</p>
+            </div> -->
+            <div
+                class="flex flex-col items-center justify-center p-6 bg-white shadow-lg rounded-xl hover:shadow-xl transition-all">
+                <div class="text-4xl text-lemon-blue mb-4">🌐</div>
+                <h3 class="text-2xl font-semibold text-center mb-2">Custom Landing Pages</h3>
+                <p class="text-center">Design and develop high-conversion landing pages for better engagement.</p>
+            </div>
+            <div
+                class="flex flex-col items-center justify-center p-6 bg-white shadow-lg rounded-xl hover:shadow-xl transition-all">
+                <div class="text-4xl text-lemon-blue mb-4">📸</div>
+                <h3 class="text-2xl font-semibold text-center mb-2">Photo/Videography</h3>
+                <p class="text-center">Capture moments with professional photo and video services for all occasions.</p>
+            </div>
+            <div
+                class="flex flex-col items-center justify-center p-6 bg-white shadow-lg rounded-xl hover:shadow-xl transition-all">
+                <div class="text-4xl text-lemon-blue mb-4">💪</div>
+                <h3 class="text-2xl font-semibold text-center mb-2">Fitness and Personal Training</h3>
+                <p class="text-center">Tailored fitness programs to help you achieve your health and fitness goals.</p>
+            </div>
+            <div
+                class="flex flex-col items-center justify-center p-6 bg-white shadow-lg rounded-xl hover:shadow-xl transition-all">
+                <div class="text-4xl text-lemon-blue mb-4">📚</div>
+                <h3 class="text-2xl font-semibold text-center mb-2">Comprehensive Online Training</h3>
+                <p class="text-center">Flexible online training sessions designed to fit your schedule and needs.</p>
+            </div>
+            <div
+                class="flex flex-col items-center justify-center p-6 bg-white shadow-lg rounded-xl hover:shadow-xl transition-all">
+                <div class="text-4xl text-lemon-blue mb-4">🍴</div>
+                <h3 class="text-2xl font-semibold text-center mb-2">Customized Meal Planning</h3>
+                <p class="text-center">Personalized meal plans to support your fitness and health goals.</p>
             </div>
         </div>
+
+        <!-- Action Button -->
+        <div class="text-center mt-12">
+            <a href="mailto:taselablessed@gmail.com" target="_blank" rel="noopener noreferrer">
+                <button
+                    class="bg-lemon-blue text-white py-3 px-8 rounded-2xl font-semibold shadow-md hover:shadow-lg transition-all">
+                    Reach out to me
+                </button>
+            </a>
+        </div>
     </div>
-    <div class="text-center p-2 md:p-8 mt-4 block md:hidden text-sm">
-        <a href="{{ emailLink }}" target="_blank" rel="noopener noreferrer">
-            <button
-                class="p-2 py-1 border-2 border-lemon-blue text-gray-900 italic font-bold rounded-md cursor-pointer">
-                <span class="mt-1">Reach out to me</span>
-                <i-feather name="mail" class="p-1 text-lemon-blue" style="width: 32px;"></i-feather>
-            </button>
-        </a>
-    </div>
-</div>
+</section>
