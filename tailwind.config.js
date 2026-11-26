@@ -7,7 +7,9 @@ module.exports = {
     extend: {
       // 1. Font
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['"Instrument Sans"', 'system-ui', 'sans-serif'],
+        display: ['"Bricolage Grotesque"', 'system-ui', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
       },
       // 2. Color palette
       colors: {
@@ -17,6 +19,15 @@ module.exports = {
         'lemon-blue': '#7843E9',
         'rich-black': '#0B0C10',      // for deep text
         'cool-white': '#FFFFFF',      // pure white
+        // 2026 redesign: bumper-plate blue + yellow on chalk
+        'chalk': '#EEF1F4',
+        'paper': '#FFFFFF',
+        'ink': '#0F1B2D',
+        'slate': '#55606F',
+        'line': '#D3DAE3',
+        'plate': '#1F4BD6',
+        'plate-dark': '#1739A8',
+        'plate-yellow': '#F5B700',
       },
       // 3. Shadows for cards / hero
       boxShadow: {

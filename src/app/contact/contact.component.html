@@ -1,29 +1,22 @@
-<section id="contact" class="bg-light-gray py-20 font-sans text-rich-black">
-    <div class="container mx-auto px-6">
-        <!-- Heading -->
-        <header class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-lemon-blue">Let's Connect</h2>
-            <div class="w-24 h-1 bg-lemon-blue mx-auto mt-2 rounded-full"></div>
-            <p class="mt-4 text-gray-700 max-w-2xl mx-auto">
-                Whether it’s a collaboration, a full-stack build, or a fitness project — I’m open to hearing from you.
-                Reach out through any of the platforms below.
-            </p>
-        </header>
-
-        <!-- Contact Cards -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
-            <div *ngFor="let contact of contacts" class="transform hover:scale-105 transition duration-300 ease-in-out">
-
-                <div class="flex flex-col justify-center items-center mb-2 block bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
-                    <a [href]="contact.url" target="_blank" rel="noopener noreferrer"
-                        class="">
-                        <i-feather [name]="contact.icon" class="text-lemon-blue"
-                            style="width: 32px; height: 32px;"></i-feather>
-                    </a>
-                    <p class="font-semibold text-gray-800 text-lg">{{ contact.message }}</p>
-                    <p class="text-sm text-gray-500 mt-1 truncate">{{ contact.handle }}</p>
-                </div>
-            </div>
-        </div>
-    </div>
+<section id="contact" class="bg-plate text-white">
+  <div class="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-28">
+    <p data-reveal class="font-mono text-xs uppercase tracking-[0.14em] text-white/70">Contact</p>
+    <h2 data-reveal class="mt-4 font-display text-5xl font-extrabold tracking-[-0.03em] md:text-8xl">Let's talk.</h2>
+    <a data-reveal href="mailto:taselablessed@gmail.com"
+      class="mt-8 inline-block break-all font-display text-2xl font-bold underline decoration-plate-yellow decoration-4 underline-offset-8 hover:decoration-white md:text-4xl">
+      taselablessed@gmail.com
+    </a>
+    <ul data-reveal class="mt-14 grid grid-cols-2 gap-4 md:grid-cols-4">
+      <li *ngFor="let social of socials">
+        <a [href]="social.url" target="_blank" rel="noopener noreferrer"
+          class="flex items-center gap-3 rounded-2xl border border-white/25 p-4 transition-colors hover:bg-white hover:text-plate">
+          <i-feather [name]="social.icon" class="h-5 w-5 shrink-0"></i-feather>
+          <span class="min-w-0">
+            <span class="block font-semibold">{{ social.label }}</span>
+            <span class="block truncate font-mono text-xs opacity-75">{{ social.handle }}</span>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
 </section>

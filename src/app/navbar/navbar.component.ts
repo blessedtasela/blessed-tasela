@@ -1,9 +1,5 @@
-import { Component, ElementRef } from '@angular/core';
-import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
-import { ContactModalComponent } from '../contact-modal/contact-modal.component';
-import { EducationModalComponent } from '../education-modal/education-modal.component';
-import { ExperienceModalComponent } from '../experience-modal/experience-modal.component';
-import { ResumeModalComponent } from '../resume-modal/resume-modal.component';
+import { Component, HostListener } from '@angular/core';
+import { CV_PATH, scrollToSection } from '../scroll-to-section';
 
 @Component({
   selector: 'app-navbar',
@@ -11,45 +7,29 @@ import { ResumeModalComponent } from '../resume-modal/resume-modal.component';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  menuOpen: boolean = false;
+  menuOpen = false;
+  cvPath = CV_PATH;
 
-  constructor(private dialog: MatDialog,
-    private elementRef: ElementRef) { }
+  links = [
+    { id: 'work', label: 'Work' },
+    { id: 'machine-learning', label: 'Machine learning' },
+    { id: 'about', label: 'About' },
+    { id: 'training', label: 'Training' },
+    { id: 'contact', label: 'Contact' },
+  ];
 
-  toggleMenu() {
-    this.menuOpen = !this.menuOpen;
+  go(id: string, event: Event): void {
+    this.setMenu(false);
+    scrollToSection(id, event);
   }
 
-  openResume() {
-    const dialogConfig = new MatDialogConfig();
-    dialogConfig.disableClose = true;
-    dialogConfig.autoFocus = true;
-    dialogConfig.width = '600px';
-    dialogConfig.height = '600px'
-
-    const dialogRef = this.dialog.open(ResumeModalComponent, dialogConfig);
-    dialogRef.afterClosed().subscribe(result => {
-      if (result) {
-        console.log(`Dialog result: ${result}`);
-      } else {
-        console.log('Dialog closed without viewing resume');
-      }
-    });
+  setMenu(open: boolean): void {
+    this.menuOpen = open;
+    document.body.style.overflow = open ? 'hidden' : '';
   }
 
-  scrollToComponent(componentId: string): void {
-    const element = this.elementRef.nativeElement.querySelector('#' + componentId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+  @HostListener('document:keydown.escape')
+  closeOnEscape(): void {
+    if (this.menuOpen) this.setMenu(false);
   }
-
-
-  sendEmail(): void {
-    const emailAddress = 'taselablessed@gmail.com';
-    const subject = 'Book an appointment with Blessed';
-    const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}`;
-    window.location.href = mailtoLink;
-  }
-
 }

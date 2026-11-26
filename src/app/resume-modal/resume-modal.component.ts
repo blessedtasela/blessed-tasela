@@ -8,7 +8,7 @@ import { MatDialogRef } from '@angular/material/dialog';
 })
 export class ResumeModalComponent {
 
-  blessedPdf: any = 'Blessed T - Frontend Resume.pdf';
+  blessedPdf: any = 'Blessed-Tasela-CV.pdf';
   constructor(private dialogRef: MatDialogRef<ResumeModalComponent>) { }
 
   closeDialog() {

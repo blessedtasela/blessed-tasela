@@ -1,13 +1,85 @@
-/* You can add global styles to this file, and also import other style files */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @import '@angular/material/prebuilt-themes/indigo-pink.css';
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
-
-
-.mat-dialog-height{
-    max-height: 600px;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
   }
+
+  body {
+    @apply bg-chalk text-ink font-sans antialiased;
+  }
+
+  section[id] {
+    scroll-margin-top: 5rem;
+  }
+
+  :focus-visible {
+    outline: 3px solid theme('colors.plate-yellow');
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+@layer components {
+  /* Highlighter stroke, like a marker on a training log */
+  .mark {
+    background-image: linear-gradient(transparent 58%, theme('colors.plate-yellow') 58%, theme('colors.plate-yellow') 92%, transparent 92%);
+    padding: 0 0.1em;
+  }
+
+  .eyebrow {
+    @apply font-mono text-xs uppercase tracking-[0.14em] text-slate;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-base font-semibold transition-colors duration-200;
+  }
+
+  .btn-primary {
+    @apply btn bg-plate text-white hover:bg-plate-dark;
+  }
+
+  .btn-outline {
+    @apply btn border-2 border-ink text-ink hover:bg-ink hover:text-chalk;
+  }
+
+  .chip {
+    @apply inline-block rounded-full border border-line bg-paper px-3 py-1 font-mono text-xs text-slate;
+  }
+
+  /* Scroll reveal: content is only hidden once JS has marked the page ready */
+  .js-reveal [data-reveal] {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .js-reveal [data-reveal].is-in {
+    opacity: 1;
+    transform: none;
+  }
+
+  .rise {
+    animation: rise 0.7s ease both;
+  }
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .rise { animation: none; }
+  .js-reveal [data-reveal] { opacity: 1; transform: none; transition: none; }
+}
+
+.mat-dialog-height {
+  max-height: 600px;
+}

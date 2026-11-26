@@ -1,73 +1,45 @@
-<section id="about" class="bg-light-gray py-20 font-sans text-rich-black">
-    <div class="container mx-auto px-6">
-        <!-- Heading -->
-        <header class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-lemon-blue">About Me</h2>
-            <div class="w-24 h-1 bg-lemon-blue mx-auto mt-2 rounded-full"></div>
-            <p class="mt-4 text-gray-700 max-w-2xl mx-auto">
-                Learn more about my background, my passions in software and fitness, and the skills I bring to every
-                project.
-            </p>
-        </header>
-
-        <!-- Content Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-
-            <!-- Bio Column -->
-            <div class="space-y-6">
-                <h3 class="text-2xl font-semibold">Where Tech Meets Passion</h3>
-                <p>
-                    With over <span class="font-semibold text-lemon-blue">3 years</span> in software engineering, I’ve
-                    built full‑stack applications using Java, JavaScript, SQL, Python, and more.
-                </p>
-                <p>
-                    I specialize in frameworks like <span class="font-semibold">Angular</span>, <span
-                        class="font-semibold">React</span>, <span class="font-semibold">Spring Boot</span>, and design
-                    with <span class="font-semibold">Tailwind</span>.
-                </p>
-                <p>
-                    Beyond code, I value <span class="font-semibold">communication</span> and <span
-                        class="font-semibold">teamwork</span>, always learning and sharing knowledge in the dev
-                    community. I work in Scrum.
-                </p>
-                <p>
-                    My route ran from Nigeria to Morocco and then to Canada, each step for education and the chance
-                    to build a career on it.
-                </p>
-                <p>
-                    <span class="font-semibold">Education:</span> Licence in Computer Systems Engineering, SUPMTI
-                    Rabat, 2020 to 2023, mention Tres Bien. Web Development with JavaScript, BCIT.
-                </p>
-                <p>
-                    In 2022 I won SUPMTI's programming competition with a solo entry, an e-learning web application
-                    built with PHP. The prize was an HP laptop and a 40% tuition scholarship.
-                </p>
-                <p>
-                    Passionate about health, I also craft personalized fitness plans as a certified trainer—bringing the
-                    same focus and energy to both disciplines.
-                </p>
-                <p>I created Berliz to unite my love for fitness and software. It’s a platform built with Spring Boot,
-                    Angular, and Strapi that empowers trainers and gyms to manage programs and track progress—making
-                    health and results easier to achieve, and harder to lose.</p>
-                <div class="text-center">
-                    <button (click)="openBerliz('https://berliz.fitness')"
-                        class="inline-block bg-lemon-blue text-white px-8 py-3 rounded-2xl font-medium shadow-card hover:shadow-lg transition">
-                        Check out Berliz
-                    </button>
-                </div>
-            </div>
-
-            <!-- Skills Column -->
-            <div>
-                <h3 class="text-2xl font-semibold mb-6">Tools of My Trade</h3>
-                <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                    <div *ngFor="let skill of skills"
-                        class="flex items-center justify-center bg-white border border-bold-gray rounded-xl py-3 px-2 hover:bg-lemon-blue hover:text-white transition">
-                        {{ skill.skill }}
-                    </div>
-                </div>
-            </div>
-
-        </div>
+<section id="about" class="border-b border-line">
+  <div class="mx-auto grid max-w-6xl gap-12 px-5 py-20 md:grid-cols-[1.1fr_1fr] md:gap-16 md:px-8 md:py-28">
+    <div data-reveal>
+      <h2 class="font-display text-4xl font-extrabold tracking-[-0.02em] md:text-6xl">About</h2>
+      <div class="mt-8 space-y-5 text-lg leading-relaxed text-slate">
+        <p>
+          I'm a software engineer and a certified personal trainer. I've built full-stack applications for over
+          three years, mostly with Java, Spring Boot, Angular and React. I work in Scrum.
+        </p>
+        <p class="text-ink">I created Berliz to unite my love for fitness and software.</p>
+        <p>
+          My route ran from Nigeria to Morocco and then to Canada, each step for education and the chance to build
+          a career on it.
+        </p>
+      </div>
     </div>
+
+    <dl data-reveal class="divide-y divide-line border-y border-line">
+      <div class="grid gap-2 py-6 sm:grid-cols-[8rem_1fr]">
+        <dt class="eyebrow pt-1">Education</dt>
+        <dd class="space-y-3">
+          <p><span class="font-semibold">Licence in Computer Systems Engineering</span><br>
+            <span class="text-slate">SUPMTI Rabat, 2020 to 2023, mention Très Bien</span></p>
+          <p><span class="font-semibold">Web Development with JavaScript</span><br>
+            <span class="text-slate">BCIT</span></p>
+        </dd>
+      </div>
+      <div class="grid gap-2 py-6 sm:grid-cols-[8rem_1fr]">
+        <dt class="eyebrow pt-1">Award</dt>
+        <dd class="leading-relaxed">
+          In 2022 I won SUPMTI's programming competition with a solo entry, an e-learning web application built
+          with PHP. The prize was an HP laptop and a 40% tuition scholarship.
+        </dd>
+      </div>
+      <div class="grid gap-2 py-6 sm:grid-cols-[8rem_1fr]">
+        <dt class="eyebrow pt-1">Tools</dt>
+        <dd>
+          <ul class="flex flex-wrap gap-2">
+            <li *ngFor="let skill of skills" class="chip">{{ skill }}</li>
+          </ul>
+        </dd>
+      </div>
+    </dl>
+  </div>
 </section>

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<!--
+  Source for src/assets/Blessed-Tasela-CV.pdf. Edit this file, then re-export:
+  & "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --headless --disable-gpu --no-pdf-header-footer --virtual-time-budget=8000 --print-to-pdf="src\assets\Blessed-Tasela-CV.pdf" "file:///C:/angular/blessed-tasela/cv/cv.html"
+  Rules: software and AI only. No invented numbers. No AWS, Docker, Kubernetes or Heroku. No phone number.
+-->
+<head>
+  <meta charset="utf-8">
+  <title>Blessed Tasela, CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <style>
+    @page { size: Letter; margin: 0; }
+    :root {
+      --ink: #0F1B2D; --slate: #55606F; --line: #D3DAE3; --plate: #1F4BD6; --yellow: #F5B700;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { width: 8.5in; }
+    body {
+      font-family: "Instrument Sans", system-ui, sans-serif; color: var(--ink);
+      font-size: 9pt; line-height: 1.33; padding: 0.4in 0.55in 0.3in;
+      -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    }
+    a { color: inherit; text-decoration: none; }
+    .mono { font-family: "JetBrains Mono", ui-monospace, monospace; }
+
+    header { border-bottom: 2px solid var(--ink); padding-bottom: 8pt; }
+    h1 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 800; font-size: 26pt; letter-spacing: -0.03em; line-height: 1; }
+    .role { margin-top: 5pt; font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 12pt; }
+    .role span { background: linear-gradient(transparent 58%, var(--yellow) 58%, var(--yellow) 92%, transparent 92%); }
+    .contact { margin-top: 7pt; display: flex; flex-wrap: wrap; gap: 3pt 14pt; font-size: 8.4pt; color: var(--slate); }
+
+    section { margin-top: 8pt; }
+    h2 {
+      font-family: "JetBrains Mono", monospace; font-weight: 500; font-size: 8pt; text-transform: uppercase;
+      letter-spacing: 0.14em; color: var(--plate); padding-bottom: 3pt; border-bottom: 1px solid var(--line); margin-bottom: 5pt;
+    }
+    .summary { font-size: 9.4pt; }
+
+    .item + .item { margin-top: 5.5pt; }
+    .row { display: flex; justify-content: space-between; align-items: baseline; gap: 12pt; }
+    h3 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 11pt; letter-spacing: -0.01em; }
+    h3 .at { font-family: "Instrument Sans", sans-serif; font-weight: 500; font-size: 9.6pt; color: var(--slate); }
+    .when { font-family: "JetBrains Mono", monospace; font-size: 8pt; color: var(--slate); white-space: nowrap; }
+    .tag {
+      display: inline-block; font-family: "JetBrains Mono", monospace; font-size: 7pt; text-transform: uppercase;
+      letter-spacing: 0.1em; padding: 0.5pt 5pt; border-radius: 99px; border: 1px solid var(--ink); vertical-align: 1.5pt; margin-left: 4pt;
+    }
+    .tag.live { background: var(--yellow); border-color: var(--yellow); }
+    .tag.wip { border-style: dashed; }
+    ul.points { margin-top: 3pt; padding-left: 11pt; }
+    ul.points li { margin-top: 1pt; }
+    ul.points li::marker { color: var(--plate); }
+    .stack { margin-top: 3pt; font-family: "JetBrains Mono", monospace; font-size: 7.8pt; color: var(--slate); }
+
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 18pt; }
+    .projects { grid-template-columns: 1fr 1fr 1fr 1fr; gap: 0 12pt; }
+    .projects .item { margin-top: 0; }
+    dl.skills { display: grid; grid-template-columns: 6.2em 1fr; gap: 2pt 10pt; }
+    dl.skills dt { font-family: "JetBrains Mono", monospace; font-size: 8pt; color: var(--slate); padding-top: 0.5pt; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Blessed Tasela</h1>
+    <p class="role">Software engineer, <span>moving into applied machine learning</span></p>
+    <p class="contact mono">
+      <span>Vancouver, BC</span>
+      <a href="mailto:taselablessed@gmail.com">taselablessed@gmail.com</a>
+      <a href="https://blessed-tasela.netlify.app">blessed-tasela.netlify.app</a>
+      <a href="https://github.com/blessedtasela">github.com/blessedtasela</a>
+      <a href="https://www.linkedin.com/in/blessed-tasela-b9071920a/">linkedin.com/in/blessed-tasela-b9071920a</a>
+    </p>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p class="summary">
+      Software engineer who built and runs Berliz, a fitness platform live in production with paying clients.
+      I work across Spring Boot, PostgreSQL and Angular, with a React Native client in development. I am applying
+      for graduate study in AI and machine learning for Fall 2027, and my first applied project predicts client
+      dropout from Berliz's own booking and training data.
+    </p>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="item">
+      <div class="row">
+        <h3>Founder and full-stack developer <span class="at">· Berliz, Vancouver</span><span class="tag live">Live</span></h3>
+        <span class="when">Jan 2024 – present</span>
+      </div>
+      <ul class="points">
+        <li>Built berliz.fitness, which connects clients with trainers and gyms for bookings, payments, training programs and progress tracking. Live in production with real users; first paying client in November 2026.</li>
+        <li>Back end in Spring Boot and PostgreSQL with JWT authentication, WebSockets for real-time features, and Flyway-managed schema migrations.</li>
+        <li>Integrated Stripe for checkout, recurring subscriptions, refunds and payouts to trainers.</li>
+        <li>Angular web client with NgRx state management; React Native (Expo) mobile client in development. Automated tests run in CI on every change.</li>
+      </ul>
+      <p class="stack">Spring Boot · PostgreSQL · Angular · NgRx · JWT · WebSockets · Stripe · React Native</p>
+    </div>
+    <div class="item">
+      <div class="row">
+        <h3>Junior full-stack developer <span class="at">· Mapersive, Casablanca</span></h3>
+        <span class="when">Apr 2023 – Dec 2023</span>
+      </div>
+      <ul class="points">
+        <li>Built Spring Boot back-end features and connected their APIs to an Angular front end.</li>
+        <li>Wrote JUnit tests for the back end and ran manual UI testing; worked in an Agile team.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Machine learning</h2>
+    <div class="item">
+      <div class="row">
+        <h3>Predicting client dropout, berliz.fitness<span class="tag wip">In progress</span></h3>
+      </div>
+      <p>Using booking and training records from my own platform to predict which clients will stop coming, so a trainer can act in time. Baseline first, then two or three models, evaluated honestly.</p>
+    </div>
+    <div class="item">
+      <div class="row">
+        <h3>Machine learning practicals <span class="at">· SUPMTI, coursework</span></h3>
+      </div>
+      <p>Artificial Intelligence course: bike-sharing demand regression and breast-cancer classification with scikit-learn, plus NumPy, pandas and Matplotlib for preprocessing and analysis.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="grid2 projects">
+      <div class="item">
+        <h3>Simply Assignment Tracker</h3>
+        <p>Deadline tracker with local-storage persistence.</p>
+        <p class="stack">React · Zustand · Vite</p>
+      </div>
+      <div class="item">
+        <h3>Fight Fusion</h3>
+        <p>2D combat game: game state, collision detection, round logic.</p>
+        <p class="stack">JavaScript · jQuery</p>
+      </div>
+      <div class="item">
+        <h3>EasyLife</h3>
+        <p>Final-year Java shopping application, three-tier architecture, built in Scrum.</p>
+        <p class="stack">Java · MySQL</p>
+      </div>
+      <div class="item">
+        <h3>E-learning web application</h3>
+        <p>Solo entry, won SUPMTI's 2022 competition.</p>
+        <p class="stack">PHP</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="grid2">
+    <div>
+      <h2>Education</h2>
+      <div class="item">
+        <h3>Licence in Computer Systems Engineering</h3>
+        <div class="row"><span>SUPMTI Rabat · mention Très Bien</span><span class="when">2020 – 2023</span></div>
+      </div>
+      <div class="item">
+        <h3>Web Development with JavaScript</h3>
+        <span>BCIT</span>
+      </div>
+      <h2 style="margin-top:9pt">Award</h2>
+      <p>Winner, SUPMTI programming competition, 2022. Prize: HP laptop and a 40% tuition scholarship.</p>
+    </div>
+    <div>
+      <h2>Skills</h2>
+      <dl class="skills">
+        <dt>Languages</dt><dd>Java, TypeScript, JavaScript, Python, C, PHP, SQL</dd>
+        <dt>Back end</dt><dd>Spring Boot, JWT, WebSockets, Stripe API, JUnit</dd>
+        <dt>Front end</dt><dd>Angular, React, React Native, Next.js, HTML, CSS, Tailwind, Bootstrap, Vite</dd>
+        <dt>Data / ML</dt><dd>PostgreSQL, MySQL, scikit-learn, NumPy, pandas, Matplotlib</dd>
+        <dt>Practice</dt><dd>Git/GitHub, CI, Scrum</dd>
+      </dl>
+    </div>
+  </section>
+</body>
+</html>
