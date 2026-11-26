@@ -7,4 +7,5 @@ export function scrollToSection(id: string, event?: Event): void {
   history.replaceState(null, '', '#' + id);
 }
 
-export const CV_PATH = 'assets/Blessed-Tasela-CV.pdf';
+// Root-absolute so it resolves the same from /portfolio, a new tab, or a shared link.
+export const CV_PATH = '/assets/Blessed-Tasela-CV.pdf';

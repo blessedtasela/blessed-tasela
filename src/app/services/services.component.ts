@@ -16,7 +16,7 @@ export class ServicesComponent {
       text: 'Training programs fitted to your goals, coached in person.',
     },
     {
-      title: 'Online training',
+      title: 'Comprehensive online training',
       text: 'Coaching sessions online, scheduled around your week.',
     },
   ];

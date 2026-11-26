@@ -69,9 +69,10 @@
   }
 }
 
+/* Movement only: the hero must be readable from the first frame, never faded out. */
 @keyframes rise {
-  from { opacity: 0; transform: translateY(16px); }
-  to { opacity: 1; transform: none; }
+  from { transform: translateY(12px); }
+  to { transform: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {

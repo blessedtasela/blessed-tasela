@@ -63,7 +63,7 @@ export class ProjectsComponent {
     {
       name: 'EasyLife',
       image: 'assets/easyLifelogin template.jpg',
-      summary: 'My final-year project at SUPMTI: a Java shopping application with a three-tier architecture, built in Scrum.',
+      summary: 'My final-year project at SUPMTI: a Java shopping application with a three-tier architecture and a MySQL database.',
       stack: ['Java', 'MySQL'],
       links: [
         { label: 'Code', url: 'https://github.com/blessedtasela/EasyLife' },
