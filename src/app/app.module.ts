@@ -42,6 +42,7 @@ import { SimplyAssignComponent } from './simply-assign/simply-assign.component';
 import { SimplyAssignDetailsComponent } from './simply-assign-details/simply-assign-details.component';
 import { EasylifeComponent } from './easylife/easylife.component';
 import { EasylifeDetailsComponent } from './easylife-details/easylife-details.component';
+import { MachineLearningComponent } from './machine-learning/machine-learning.component';
 
 @NgModule({
   declarations: [
@@ -81,6 +82,7 @@ import { EasylifeDetailsComponent } from './easylife-details/easylife-details.co
     SimplyAssignDetailsComponent,
     EasylifeComponent,
     EasylifeDetailsComponent,
+    MachineLearningComponent,
   ],
   imports: [
     BrowserModule,

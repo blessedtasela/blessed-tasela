@@ -41,13 +41,6 @@ export class ContactComponent {
     message: 'Instagram',
     icon: 'instagram',
     handle: '@blessed_tasela'
-  },
-  {
-    id: 6,
-    url: 'https://wa.me/+12369900823?text=Hi Blessed, I would like to...',
-    message: 'WhatsApp',
-    icon: 'message-circle',
-    handle: '+1 (236) 990-0823'
   }
 ];
 

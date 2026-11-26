@@ -9,13 +9,13 @@ export class FooterComponent {
   contacts = [
     {
       'id': 1,
-      'url': 'taselablessed@gmail.com',
+      'url': 'mailto:taselablessed@gmail.com',
       'message': 'Email',
       'icon': 'mail'
     },
     {
       'id': 2,
-      'url': 'https://www.facebook.com/tasela.berlizyo/',
+      'url': 'https://www.facebook.com/tasela.berliz/',
       'message': 'Facebook',
       'icon': 'facebook'
     },
@@ -23,7 +23,7 @@ export class FooterComponent {
       'id': 3,
       'url': 'https://www.linkedin.com/in/blessed-tasela-b9071920a/',
       'message': 'Linkedin',
-      'icon': 'linkedIn'
+      'icon': 'linkedin'
     },
     {
       'id': 4,
@@ -33,15 +33,9 @@ export class FooterComponent {
     },
     {
       'id': 5,
-      'url': 'https://www.instagram.com/tasela_berliz/',
+      'url': 'https://www.instagram.com/blessed_tasela/',
       'message': 'Instagram',
       'icon': 'instagram'
-    },
-    {
-      'id': 6,
-      'url': 'https://wa.me/+12369900823?text=Hi Blessed, I would like to...',
-      'message': 'Whatsapp',
-      'icon': 'message-circle'
     }
   ]
 
