@@ -3,15 +3,19 @@
     <header data-reveal class="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
       <h2 class="font-display text-4xl font-extrabold tracking-[-0.02em] md:text-6xl">Work</h2>
       <p class="max-w-md text-slate">
-        Four projects, from a platform in production with paying clients to my final-year project at SUPMTI.
+        Five projects, from a platform in production with paying clients to a Unix shell written in C.
       </p>
     </header>
 
     <!-- Flagship -->
     <article data-reveal class="mt-12 overflow-hidden rounded-3xl border border-line bg-paper md:grid md:grid-cols-[1.15fr_1fr]">
-      <div class="bg-ink p-4 md:p-6">
-        <img src="assets/berliz-main.png" alt="The Berliz home page"
-          class="h-full w-full rounded-2xl object-cover object-left-top" loading="lazy" />
+      <div class="relative bg-ink p-4 pb-10 sm:pb-14 md:flex md:items-center md:p-6 md:pb-16">
+        <img src="assets/berliz-desktop.webp" alt="The berliz.fitness home page on a desktop browser"
+          width="1440" height="900" class="w-full rounded-xl border border-white/10 sm:w-[88%]" loading="lazy" />
+        <img src="assets/berliz-phone.webp" alt="The berliz.fitness home page on a phone"
+          width="390" height="844"
+          class="absolute bottom-4 right-4 w-[26%] max-w-[150px] rounded-[1.1rem] border-4 border-ink shadow-2xl ring-1 ring-white/15 md:bottom-6 md:right-6"
+          loading="lazy" />
       </div>
       <div class="flex flex-col p-6 md:p-10">
         <p class="eyebrow flex items-center gap-2">
@@ -43,12 +47,16 @@
     </article>
 
     <!-- Other projects -->
-    <div class="mt-6 grid gap-6 md:grid-cols-3">
+    <div class="mt-6 grid gap-6 md:grid-cols-2">
       <article *ngFor="let project of projects" data-reveal
         class="flex flex-col overflow-hidden rounded-3xl border border-line bg-paper">
-        <div class="aspect-[16/10] overflow-hidden border-b border-line bg-chalk">
-          <img [src]="project.image" [alt]="project.name + ' screenshot'" class="h-full w-full object-cover object-top"
-            loading="lazy" />
+        <div class="aspect-[16/9] overflow-hidden border-b border-line bg-chalk">
+          <img *ngIf="project.image" [src]="project.image" [alt]="project.name + ' screenshot'"
+            class="h-full w-full object-cover object-top" loading="lazy" />
+          <!-- A shell has no UI to screenshot: show a session instead -->
+          <pre *ngIf="project.terminal" aria-hidden="true"
+            class="h-full w-full overflow-hidden bg-ink p-5 font-mono text-[0.8rem] leading-relaxed"><ng-container *ngFor="let line of project.terminal"><ng-container *ngIf="line.startsWith('$ '); else output"><span class="text-plate-yellow">$ </span><span class="text-chalk">{{ line.slice(2) }}</span></ng-container><ng-template #output><span class="text-chalk/60">{{ line }}</span></ng-template>
+</ng-container></pre>
         </div>
         <div class="flex flex-1 flex-col p-6">
           <h3 class="font-display text-2xl font-bold tracking-tight">{{ project.name }}</h3>

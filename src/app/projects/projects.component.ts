@@ -7,7 +7,8 @@ interface ProjectLink {
 
 interface Project {
   name: string;
-  image: string;
+  image?: string;
+  terminal?: string[];
   summary: string;
   stack: string[];
   links: ProjectLink[];
@@ -22,6 +23,23 @@ export class ProjectsComponent {
   berlizStack = ['Spring Boot', 'PostgreSQL', 'Angular', 'JWT', 'WebSockets', 'Stripe', 'React Native'];
 
   projects: Project[] = [
+    {
+      name: 'Simple Shell',
+      terminal: [
+        '$ gcc *.c -o hsh',
+        '$ ./hsh',
+        '$ setenv GREETING hello',
+        '$ cd /tmp',
+        '$ pwd',
+        '/tmp',
+        '$ exit',
+      ],
+      summary: 'A Unix shell in C, built with a teammate during the ALX programme. It parses commands, runs programs, and handles builtins, environment variables and history.',
+      stack: ['C', 'Unix system calls'],
+      links: [
+        { label: 'Code', url: 'https://github.com/blessedtasela/simple_shell' },
+      ],
+    },
     {
       name: 'Fight Fusion',
       image: 'assets/fight-fusion-lg.png',
