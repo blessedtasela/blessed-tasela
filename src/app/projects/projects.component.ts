@@ -42,7 +42,7 @@ export class ProjectsComponent {
     },
     {
       name: 'Fight Fusion',
-      image: 'assets/fight-fusion-lg.png',
+      image: 'assets/fight-fusion.webp',
       summary: 'A 2D combat game against a computer opponent. Game state, collision detection and round logic, written from scratch.',
       stack: ['JavaScript', 'jQuery'],
       links: [
